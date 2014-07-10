@@ -1,0 +1,18 @@
+// #PAGE
+// Page-level styling, e.g. `html` and `body` elements, etc.
+
+// 1. One off bits of maths to get our base font size in ems and our base line height in a unitless value.
+
+html {
+
+}
+
+body {
+	margin: 0 auto;
+	max-width: 2362px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}

@@ -1,0 +1,25 @@
+{
+    "debug": true,
+    "domain": null,
+    "lintScripts": false,
+    "modelSource": null,
+    "preprocessorLocations": [
+        "assets"
+    ],
+    "preprocessorScriptOutput": "assets/js",
+    "preprocessorStyleOutput": "assets/css",
+    "projectDescription": "Pete Naish\u0027s Development Portfolio",
+    "projectName": "portfolio",
+    "publishedId": null,
+    "serverHostname": null,
+    "serverPort": null,
+    "simpleModePartnerServer": null,
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "templateDirectory": "templates",
+    "type": "mixture",
+    "useCompass": false,
+    "convertHtml": {
+        "relativePaths": false
+    }
+}

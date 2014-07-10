@@ -1,0 +1,87 @@
+// #RESET
+
+// A more considered reset; more of a restart... 
+// As per: csswizardry.com/2011/10/reset-restarted
+
+// Let’s make the box model all nice, shall we…?
+
+* {
+    &,
+    &::before,
+    &::after {
+        @include prefix(box-sizing, border-box);
+    }
+}
+
+// The usual...
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+// Give a help cursor to elements that give extra info on `:hover`.
+
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+// Give form elements some cursor interactions...
+
+input[type=button],
+input[type=submit],
+input[type='reset'],
+label,
+button,
+select,
+option {
+    cursor:pointer;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=tel],
+input[type=search],
+input[type=number],
+textarea,
+textarea:active,
+textarea:focus {
+    cursor: text;
+}
+
+// Remove underlines from potentially troublesome elements.
+
+a,
+u,
+ins {
+    text-decoration: none;
+}
+
+// So that `alt` text is visually offset if images don’t load.
+
+img {
+    font-style: italic;
+}
