@@ -10,9 +10,15 @@ html {
 body {
 	margin: 0 auto;
 	max-width: 2362px;
+	background-color: #2b303b;
+	color: #fff;
 }
 
 img {
 	max-width: 100%;
 	display: block;
+}
+
+p {
+	font-family: $font--copy;
 }

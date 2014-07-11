@@ -1,12 +1,12 @@
 .project {
-	border-bottom: 4px dashed #ccc;
+    border-top: 1px solid $color--grey--lighter;
+	border-bottom: 1px solid $color--grey--darker;
 	overflow: hidden;
 }
 
 .project__info {
-    padding: 20px;
-    background-color: #2b303b;
-    color: #fff;
+    padding: 40px 20px 20px;
+    overflow: hidden;
     a {
     	color: inherit;
     }
@@ -14,6 +14,9 @@
 
 .project__title {
 	margin-bottom: 10px;
+    font-size: em(30px);
+    letter-spacing: em(1.3px);
+    font-family: droid-serif, times, serif;
 }
 
 .project__actions {
@@ -23,18 +26,74 @@
 	// right: 0;
 }
 
-.project__cta {
-	width: 50%;
-	float: left;
-	text-align: center;
-	padding: 20px;
-	color: #fff;
-	// background-color: #323848;
-	background-color: rgba(50, 56, 72, .8);
-	&:hover {
-		background-color: #2b303b;
-	}
+.project__cta,
+.project__cta--single {
+    @include prefix(transition, all .2s ease-out);
+    font-family: $font--heading;
+    font-size: em(18px);
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    border-right: 1px solid $color--grey--darker;
+    border-top: 1px solid #2B303B;
+	&:hover,
+    &:focus {
+        @include prefix(transition, all .1s ease-out);
+        border-top: 1px solid $color--grey;
+        background-color: $color--grey;
+        outline: 0;
+    }
+    &:active {
+        background-color: $color--grey;
+        border-top: 1px solid $color--grey--darker;
+    }
 	+ .project__cta {
 		float: right;
+        border-right: 0;
+        border-left: 1px solid $color--grey--lighter;
+        &:active {
+            border-left-color: $color--grey--darker;
+        }
 	}
+}
+
+.project__cta--single {
+    width: 100%;
+    border-right: 0;
+}
+
+.project__tools {
+    clear: both;
+}
+
+@include media-query(800) {
+    .info--primary,
+    .info--secondary {
+        float: left;
+        width: 50%;
+    }
+    .info--primary {
+        padding-right: 20px;
+    }
+
+    .info--secondary {
+        text-align: right;
+        padding-left: 20px;
+    }
+}
+
+
+.info__label {
+    font-size: em(20px);
+    margin-bottom: 10px;
+}
+
+.info__text {
+    margin-bottom: 20px;
+}
+
+.project__tools {
+    display: none;
 }

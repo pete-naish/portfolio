@@ -3,6 +3,10 @@
 
 @mixin media-query($breakpoint) {
 
+    @if $breakpoint == 800 {
+        @media all and (min-width: em(800px)) { @content; }   
+    }
+
     @if $breakpoint == tablet {
      @media all and (min-width: em(768px)) and (max-width: em(1024px)) { @content; }
     }
