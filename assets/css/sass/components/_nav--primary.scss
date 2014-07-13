@@ -1,23 +1,45 @@
 .nav--primary__items {
-	display: table;
-	table-layout: fixed;
-	width: 100%;
+    
+    // @include media-query(800) {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    // }
 }
 
 .nav--primary__item {
-	font-family: $font--heading;
-	display: table-cell;
-	color: #fff;
-	text-align: center;
+    font-family: $font--heading;
+    
+    color: #fff;
+    
+    // @include media-query(800) {
+        display: table-cell;    
+        text-align: center;
+        vertical-align: middle;
+    // }
 }
 
-
 .nav--primary__link {
-	color: inherit;
-	display: block;
-	padding: 20px;
-	.highlight {
-		border-bottom: 1px solid;
-	}
+    @include prefix(transition, all .2s ease-out);
+    color: inherit;
+    display: block;
+    padding: 20px;
+    &:focus,
+    &:hover {
+        @include prefix(transition, all .1s ease-out);
+        background-color: $color--grey;
+        outline: 0;
+    }
+    .context {
+        display: none;
+    }
+    @include media-query(800) {
+        .context {
+            display: inline;
+        }
+        .highlight {
+            border-bottom: 1px solid;
+        }
+    }
 }
 
