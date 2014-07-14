@@ -1,22 +1,15 @@
 .nav--primary__items {
-    
-    // @include media-query(800) {
-        display: table;
-        table-layout: fixed;
-        width: 100%;
-    // }
+    display: table;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .nav--primary__item {
     font-family: $font--heading;
-    
     color: #fff;
-    
-    // @include media-query(800) {
-        display: table-cell;    
-        text-align: center;
-        vertical-align: middle;
-    // }
+    display: table-cell;    
+    text-align: center;
+    vertical-align: middle;
 }
 
 .nav--primary__link {
