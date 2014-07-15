@@ -24,7 +24,8 @@
         left: 0;
         right: 0;
         padding: 10px 20px;
-        background-color: #2b303b;
+        background-color: $color--grey--background;
+        z-index: 999;
     }
 }
 
@@ -34,7 +35,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #2b303b;
+        background-color: $color--grey--background;
     }
 }
 
@@ -47,7 +48,7 @@
     text-align: center;
     padding: 20px;
     color: #fff;
-    border-top: 1px solid #2B303B;
+    border-top: 1px solid $color--grey--background;
 	&:hover,
     &:focus {
         @include prefix(transition, all .1s ease-out);
@@ -88,29 +89,150 @@
 
 .project__tools {
     clear: both;
+    padding-top: 30px;
 }
 
 .project__tool {
+    @include prefix(transition, all .2s ease-out);
     list-style: none;
     width: 50px;
     margin-right: 20px;
     margin-bottom: 20px;
     display: inline-block;
     vertical-align: middle;
-    path {
+    position: relative;
+    &:hover,
+    &:active,
+    &:focus {
+        @include prefix(transition, all .1s ease-out);
+        @include prefix(transform, scale(1.15, 1.15));
+    }
+    path,
+    rect,
+    circle {
         @include prefix(transition, all .2s ease-out);
     }
-    .bem {
-        fill: #fff;
+    svg {
+        width: 100%;
+        max-height: 80px;
     }
-    &:hover {
-        path {
+}
+
+.tool__link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &:hover + svg,
+    &:active + svg,
+    &:focus + svg {
+        path,
+        rect,
+        circle {
             @include prefix(transition, all .1s ease-out);
         }
-        .bem {
-            fill: #f00;
+        .html5__shield--left {
+            fill: #E44F26;
+        }
+        .html5__shield--right {
+            fill: #f1662a;
+        }
+        .html5__5--left {
+            fill: #ebebeb
+        }
+        .html5__5--right {
+            fill: #fff;
+        }
+        .css3__shield--left {
+            fill: #1572B6;
+        }
+        .css3__shield--right {
+            fill: #33a9dc;
+        }
+        .css3__3--top-left {
+            fill: #ebebeb;
+        }
+        .css3__3--top-right {
+            fill: #fff;
+        }
+        .css3__3--bottom-right {
+            fill: #fff;
+        }
+        .css3__3--bottom-left {
+            fill: #ebebeb;
+        }
+        .jquery__wave {
+            fill: #1b75bb;
+        }
+        .sass__text {
+            fill: #cc6699;
+        }
+        .bem__shape {
+            fill: #ffc31a;
+        }
+        .mixture__top {
+            fill: #fff200;
+        }
+        .mixture__middle-left {
+            fill: #ed1c24;
+        }
+        .mixture__middle {
+            fill: #363639;
+        }
+        .mixture__middle-right {
+            fill: #00a651;
+        }
+        .mixture__middle-bottom {
+            fill: #2e3092;
+        }
+        .mixture__bottom-right {
+            fill: #00aef0;
+        }
+        .mixture__bottom-left {
+            fill: #ec008c;
+        }
+        .prepros__circle {
+            fill: #5b9b0f;
+        }
+        .git__shape {
+            fill: #f03c2e;
+        }
+        .compass__shape--bottom {
+            fill: #D91607;
+        }
+        .compass__shape--middle {
+            fill: #fe6056;
+        }
+        .compass__shape--top {
+            fill: #eb1808;
+        }
+        .compass__star {
+            fill: #fff;
         }
     }
+}
+
+.html5__shield--left,
+.html5__shield--right,
+.css3__shield--left,
+.css3__shield--right,
+.jquery__wave,
+.sass__text,
+.bem__shape,
+.mixture__shape,
+.git__shape,
+.compass__shape {
+    fill: #fff;
+}
+
+.html5__5--left,
+.html5__5--right,
+.css3__3--top-left,
+.css3__3--top-right,
+.css3__3--bottom-right,
+.css3__3--bottom-left,
+.prepros__circle,
+.compass__star {
+    fill: $color--grey--background;
 }
 
 @include media-query(800) {
@@ -136,7 +258,3 @@
 .info__text {
     margin-bottom: 20px;
 }
-
-// .project__tools {
-//     display: none;
-// }

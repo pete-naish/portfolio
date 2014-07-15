@@ -10,18 +10,72 @@
     display: table-cell;    
     text-align: center;
     vertical-align: middle;
+    position: relative;
+    svg {
+        width: 100%;
+    }
+    path,
+    rect,
+    circle {
+        @include prefix(transition, all .2s ease-out);
+    }
+}
+
+.github__ears,
+.github__eye--right,
+.github__eye--left,
+.twitter__bird,
+.email__envelope,
+.cv__shape {
+    fill: #fff;
+}
+
+.github__face,
+.linkedin__square {
+    fill: $color--grey--background;
 }
 
 .nav--primary__link {
     @include prefix(transition, all .2s ease-out);
-    color: inherit;
-    display: block;
-    padding: 20px;
-    &:focus,
-    &:hover {
-        @include prefix(transition, all .1s ease-out);
-        background-color: $color--grey;
-        outline: 0;
+    // padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &:hover + svg,
+    &:active + svg,
+    &:focus + svg {
+        path,
+        rect,
+        circle {
+            @include prefix(transition, all .1s ease-out);
+        }
+        .github__ears {
+            fill: #000;
+        }
+        .github__eye--left,
+        .github__eye--right {
+            fill: #6e4936;
+        }
+        .github__eye--left,
+        .github__eye--right {
+            stroke: #fff;
+        }
+        .github__face {
+            fill: #f3cab2;
+        }
+        .linkedin__square {
+            fill: #1884bb;
+        }
+        .twitter__bird {
+            fill: #55acee;
+        }
+        .email__envelope {
+            fill: #d74937;
+        }
+        .cv__shape {
+            fill: #ffcc00;
+        }
+
     }
     .context {
         display: none;
