@@ -10,6 +10,9 @@
     .compass__star {
         fill: $color--fscs;
     }
+    .project__info {
+        border-bottom: 2px solid darken($color--fscs, 15%);
+    }
     .project__cta,
     .project__cta--single {
         background-color: darken($color--fscs, 10%);

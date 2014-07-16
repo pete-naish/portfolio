@@ -1,5 +1,5 @@
-.project--dll {
-    background-color: $color--dll;
+.project--cp {
+    background-color: $color--cp;
     .html5__5--left,
     .html5__5--right,
     .css3__3--top-left,
@@ -8,17 +8,20 @@
     .css3__3--bottom-left,
     .prepros__circle,
     .compass__star {
-        fill: $color--dll;
+        fill: $color--cp;
+    }
+    .project__info {
+        border-bottom: 2px solid darken($color--cp, 15%);
     }
     .project__cta,
     .project__cta--single {
-        background-color: darken($color--dll, 10%);
+        background-color: darken($color--cp, 10%);
         &:hover,
         &:focus {
-            background-color: darken($color--dll, 5%);
+            background-color: darken($color--cp, 5%);
         }
         &:active {
-            background-color: darken($color--dll, 15%);
+            background-color: darken($color--cp, 15%);
         }
     }
 }

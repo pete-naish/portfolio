@@ -10,6 +10,9 @@
     .compass__star {
         fill: $color--central;
     }
+    .project__info {
+        border-bottom: 2px solid darken($color--central, 15%);
+    }
     .project__cta,
     .project__cta--single {
         background-color: darken($color--central, 10%);

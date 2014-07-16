@@ -1,5 +1,5 @@
-.project--mdu {
-    background-color: $color--mdu;
+.project--bb {
+    background-color: $color--bb;
     .html5__5--left,
     .html5__5--right,
     .css3__3--top-left,
@@ -8,17 +8,20 @@
     .css3__3--bottom-left,
     .prepros__circle,
     .compass__star {
-        fill: $color--mdu;
+        fill: $color--bb;
+    }
+    .project__info {
+        border-bottom: 2px solid darken($color--bb, 15%);
     }
     .project__cta,
     .project__cta--single {
-        background-color: darken($color--mdu, 10%);
+        background-color: darken($color--bb, 10%);
         &:hover,
         &:focus {
-            background-color: darken($color--mdu, 5%);
+            background-color: darken($color--bb, 5%);
         }
         &:active {
-            background-color: darken($color--mdu, 15%);
+            background-color: darken($color--bb, 15%);
         }
     }
 }

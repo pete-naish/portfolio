@@ -1,12 +1,6 @@
 // #GUI
 // Pull in all our styled components.
 
-@import 'nav--primary',
-        'project',
-        'project--central',
-        'project--dll',
-        'project--fscs',
-        'project--parkinsons',
-        'project--mdu',
-        'project--bb',
-        'project--cp';
+@import 'header',
+		'nav--primary',
+        'projects/all';

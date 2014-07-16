@@ -10,25 +10,12 @@
     }
 }
 
-.wrapper--sticky {
-    background-color: inherit;
-}
-
 .project__title {
     @include prefix(transition, background-color .2s ease-out);
-    padding: 20px;
+    padding: 20px 20px 0;
     font-size: em(30px);
     letter-spacing: em(1.3px);
     font-family: $font--heading;
-    &.stuck {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 10px 20px;
-        background-color: inherit;
-        z-index: 999;
-    }
 }
 
 .info__label {
