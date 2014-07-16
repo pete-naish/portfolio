@@ -75,18 +75,17 @@
         .cv__shape {
             fill: #ffcc00;
         }
-
     }
-    .context {
-        display: none;
-    }
-    @include media-query(800) {
-        .context {
-            display: inline;
-        }
-        .highlight {
-            border-bottom: 1px solid;
-        }
-    }
+    // .context {
+    //     display: none;
+    // }
+    // @include media-query(800) {
+    //     .context {
+    //         display: inline;
+    //     }
+    //     .highlight {
+    //         border-bottom: 1px solid;
+    //     }
+    // }
 }
 

@@ -1,20 +1,22 @@
 .project {
-    border-top: 1px solid $color--grey--lighter;
-	border-bottom: 1px solid $color--grey--darker;
 	overflow: hidden;
 }
 
 .project__info {
-    padding: 40px 20px 20px;
+    padding: 0 20px 20px;
     overflow: hidden;
     a {
     	color: inherit;
     }
 }
 
+.wrapper--sticky {
+    background-color: inherit;
+}
+
 .project__title {
     @include prefix(transition, background-color .2s ease-out);
-    margin-bottom: 10px;
+    padding: 20px;
     font-size: em(30px);
     letter-spacing: em(1.3px);
     font-family: $font--heading;
@@ -24,19 +26,18 @@
         left: 0;
         right: 0;
         padding: 10px 20px;
-        background-color: $color--grey--background;
+        background-color: inherit;
         z-index: 999;
     }
 }
 
-.project__actions {
-    &.stuck {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: $color--grey--background;
-    }
+.info__label {
+    font-size: em(20px);
+    margin-bottom: 10px;
+}
+
+.info__text {
+    margin-bottom: 20px;
 }
 
 .project__cta,
@@ -47,37 +48,18 @@
     display: block;
     text-align: center;
     padding: 20px;
-    color: #fff;
-    border-top: 1px solid $color--grey--background;
+    color: inherit;
 	&:hover,
     &:focus {
         @include prefix(transition, all .1s ease-out);
-        border-top: 1px solid $color--grey;
-        background-color: $color--grey;
         outline: 0;
-    }
-    &:active {
-        background-color: $color--grey;
-        border-top: 1px solid $color--grey--darker;
-    }
-    + .project__cta {
-        border-top: 1px solid $color--grey--lighter;
-        &:active {
-            border-top: 1px solid $color--grey--darker;
-        }
     }
     @include media-query(550) {
         width: 50%;
         float: left;
-        border-right: 1px solid $color--grey--darker;
         + .project__cta {
             float: right;
             border-right: 0;
-            border-top: 1px solid $color--grey;
-            border-left: 1px solid $color--grey--lighter;
-            &:active {
-                border-left-color: $color--grey--darker;
-            }
         }
     }
 }
@@ -130,6 +112,9 @@
         circle {
             @include prefix(transition, all .1s ease-out);
         }
+        .html5__text {
+            fill: #fff;
+        }
         .html5__shield--left {
             fill: #E44F26;
         }
@@ -140,6 +125,9 @@
             fill: #ebebeb
         }
         .html5__5--right {
+            fill: #fff;
+        }
+        .css3__text {
             fill: #fff;
         }
         .css3__shield--left {
@@ -193,6 +181,9 @@
         .prepros__circle {
             fill: #5b9b0f;
         }
+        .prepros__shape {
+            fill: #fff;
+        }
         .git__shape {
             fill: #f03c2e;
         }
@@ -211,8 +202,10 @@
     }
 }
 
+.html5__text,
 .html5__shield--left,
 .html5__shield--right,
+.css3__text,
 .css3__shield--left,
 .css3__shield--right,
 .jquery__wave,
@@ -220,41 +213,26 @@
 .bem__shape,
 .mixture__shape,
 .git__shape,
-.compass__shape {
+.compass__shape,
+.prepros__shape {
     fill: #fff;
 }
 
-.html5__5--left,
-.html5__5--right,
-.css3__3--top-left,
-.css3__3--top-right,
-.css3__3--bottom-right,
-.css3__3--bottom-left,
-.prepros__circle,
-.compass__star {
-    fill: $color--grey--background;
-}
-
-@include media-query(800) {
-    .info--primary,
-    .info--secondary {
-        float: left;
-        width: 50%;
+.project--inverted {
+    color: #1a1a1a;
+    .html5__text,
+    .html5__shield--left,
+    .html5__shield--right,
+    .css3__text,
+    .css3__shield--left,
+    .css3__shield--right,
+    .jquery__wave,
+    .sass__text,
+    .bem__shape,
+    .mixture__shape,
+    .git__shape,
+    .compass__shape,
+    .prepros__shape {
+        fill: #1a1a1a;
     }
-    .info--primary {
-        padding-right: 20px;
-    }
-    .info--secondary {
-        text-align: right;
-        padding-left: 20px;
-    }
-}
-
-.info__label {
-    font-size: em(20px);
-    margin-bottom: 10px;
-}
-
-.info__text {
-    margin-bottom: 20px;
 }

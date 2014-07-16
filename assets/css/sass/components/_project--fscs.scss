@@ -1,0 +1,24 @@
+.project--fscs {
+    background-color: $color--fscs;
+    .html5__5--left,
+    .html5__5--right,
+    .css3__3--top-left,
+    .css3__3--top-right,
+    .css3__3--bottom-right,
+    .css3__3--bottom-left,
+    .prepros__circle,
+    .compass__star {
+        fill: $color--fscs;
+    }
+    .project__cta,
+    .project__cta--single {
+        background-color: darken($color--fscs, 10%);
+        &:hover,
+        &:focus {
+            background-color: darken($color--fscs, 5%);
+        }
+        &:active {
+            background-color: darken($color--fscs, 15%);
+        }
+    }
+}

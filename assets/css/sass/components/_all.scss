@@ -1,9 +1,12 @@
 // #GUI
 // Pull in all our styled components.
 
-@import 'grid',
-        'nav--primary',
-        'carousel--simple',
-        'rte',
-        'pagination',
-        'project';
+@import 'nav--primary',
+        'project',
+        'project--central',
+        'project--dll',
+        'project--fscs',
+        'project--parkinsons',
+        'project--mdu',
+        'project--bb',
+        'project--cp';

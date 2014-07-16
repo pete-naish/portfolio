@@ -1,0 +1,24 @@
+.project--mdu {
+    background-color: $color--mdu;
+    .html5__5--left,
+    .html5__5--right,
+    .css3__3--top-left,
+    .css3__3--top-right,
+    .css3__3--bottom-right,
+    .css3__3--bottom-left,
+    .prepros__circle,
+    .compass__star {
+        fill: $color--mdu;
+    }
+    .project__cta,
+    .project__cta--single {
+        background-color: darken($color--mdu, 10%);
+        &:hover,
+        &:focus {
+            background-color: darken($color--mdu, 5%);
+        }
+        &:active {
+            background-color: darken($color--mdu, 15%);
+        }
+    }
+}
