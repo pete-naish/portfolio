@@ -1,23 +1,39 @@
-.nav--primary__items {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
+.nav--primary {
+    float: left;
+    margin: 0 0 30px 30px;
+    @include media-query(550) {
+        float: right;
+        margin: 40px 0;
+    }
 }
 
 .nav--primary__item {
     font-family: $font--heading;
-    color: #fff;
-    display: table-cell;    
-    text-align: center;
-    vertical-align: middle;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
     position: relative;
     svg {
-        width: 100%;
+        width: 30px;
+        height: 30px;
     }
     path,
     rect,
     circle {
         @include prefix(transition, all .2s ease-out);
+    }
+    @include media-query(mobile) {
+        margin-right: 30px;
+    }
+}
+
+.nav--primary__link--text {
+    font-size: em(18px);
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+    &:hover {
+        border-bottom: 2px solid;
     }
 }
 
@@ -26,13 +42,13 @@
 .github__eye--left,
 .twitter__bird,
 .email__envelope,
-.cv__shape {
-    fill: #fff;
+.cv__shape,
+.linkedin__square {
+    fill: #333;
 }
 
-.github__face,
-.linkedin__square {
-    fill: $color--grey--background;
+.github__face {
+    fill: #fff;
 }
 
 .nav--primary__link {
@@ -76,4 +92,3 @@
         }
     }
 }
-

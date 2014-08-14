@@ -3,7 +3,6 @@
     <head>
         <title>Pete Naish | Front-end Web Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        {% comment %}<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>{% endcomment %}
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
     </head>
@@ -11,11 +10,6 @@
         {% include "header" %}
         {% block content %}{% endblock %}
         {% include "footer" %}
-        {% comment %}<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
-        {{ "vendor/jquery__waypoints--2.0.5.min.js" | asset_url | script_tag }}
-        {{ "vendor/jquery__waypoints--2.0.5__sticky.min.js" | asset_url | script_tag }}
-        {{ "app.min.js" | asset_url | script_tag }}{% endcomment %}
         {% block scripts %}{% endblock %}
     </body>
 </html>
