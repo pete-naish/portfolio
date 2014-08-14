@@ -3,7 +3,7 @@
 }
 
 .project__info {
-    padding: 0 20px 20px;
+    padding: 0 30px 30px;
     overflow: hidden;
     a {
     	color: inherit;
@@ -12,19 +12,20 @@
 
 .project__title {
     @include prefix(transition, background-color .2s ease-out);
-    padding: 20px 20px 0;
+    padding: 50px 30px 0;
     font-size: em(30px);
-    letter-spacing: em(1.3px);
+    font-weight: 300;
+    // letter-spacing: em(1.3px);
     font-family: $font--heading;
 }
 
 .info__label {
     font-size: em(20px);
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .info__text {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .project__cta,
@@ -41,12 +42,15 @@
         @include prefix(transition, all .1s ease-out);
         outline: 0;
     }
+    + .project__cta {
+        border-top: 1px solid;
+    }
     @include media-query(550) {
         width: 50%;
         float: left;
         + .project__cta {
             float: right;
-            border-right: 0;
+            border: 0;
         }
     }
 }

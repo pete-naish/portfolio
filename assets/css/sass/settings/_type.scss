@@ -6,6 +6,6 @@
 
 @include font-face(droid--sans, '../type/droid--sans');
 
-$font--heading: droid--serif, times, serif;
+$font--copy: 'Roboto', helvetica, arial, sans-serif;
 
-$font--copy: droid--sans, helvetica, arial, sans-serif;
+$font--heading: $font--copy;

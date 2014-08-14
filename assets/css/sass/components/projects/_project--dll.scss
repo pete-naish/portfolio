@@ -23,5 +23,8 @@
         &:active {
             background-color: darken($color--dll, 15%);
         }
+        + .project__cta {
+            border-top-color: darken($color--dll, 15%);
+        }
     }
 }
