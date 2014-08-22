@@ -1,7 +1,6 @@
 header {
     background-color: #fff;
     overflow: hidden;
-    // color: #1a1a1a;
     @include media-query(tablet-and-desktop) {
         position: fixed;
         top: 0;
@@ -14,4 +13,5 @@ header {
 .logo {
     float: left;
     margin: 30px;
+    cursor: pointer;
 }

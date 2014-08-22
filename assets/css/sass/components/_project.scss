@@ -1,12 +1,52 @@
 .project {
 	overflow: hidden;
+    &:nth-child(odd) {
+        background-color:$color--grey--primary;
+        .html5__5--left,
+        .html5__5--right,
+        .css3__3--top-left,
+        .css3__3--top-right,
+        .css3__3--bottom-right,
+        .css3__3--bottom-left,
+        .prepros__circle,
+        .compass__star {
+            fill: $color--grey--primary;
+        }
+    }
+    &:nth-child(even) {
+        background-color:$color--grey--secondary;   
+        .html5__5--left,
+        .html5__5--right,
+        .css3__3--top-left,
+        .css3__3--top-right,
+        .css3__3--bottom-right,
+        .css3__3--bottom-left,
+        .prepros__circle,
+        .compass__star {
+            fill: $color--grey--secondary;
+        }
+    }
+}
+
+.project__image {
+    padding: 40px 30px;
+    @include media-query(1200) {
+        float: right;
+        width: 60%;
+        padding-bottom: 130px;
+    }
 }
 
 .project__info {
-    padding: 0 30px 30px;
+    padding: 0 30px;
     overflow: hidden;
     a {
     	color: inherit;
+    }
+    @include media-query(1200) {
+        float: left;
+        width: 40%;
+        margin-top: 40px;
     }
 }
 
@@ -27,41 +67,40 @@
     margin-bottom: 40px;
 }
 
-.project__cta,
-.project__cta--single {
+.project__actions {
+    float: left;
+    clear: left;
+    margin: 0 30px 40px;
+}
+
+.project__cta {
     @include prefix(transition, all .2s ease-out);
+    @include prefix(border-radius, 3px);
     font-family: $font--heading;
     font-size: em(18px);
-    display: block;
-    text-align: center;
-    padding: 20px;
-    color: inherit;
+    float: left;
+    border: 1px solid $color--copy;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: $color--copy;
+    background: transparent;
 	&:hover,
     &:focus {
         @include prefix(transition, all .1s ease-out);
         outline: 0;
+        background-color: $color--highlight;
+        border-color: $color--highlight;
+        color: #fff;
     }
     + .project__cta {
-        border-top: 1px solid;
+        margin-right: 0;
     }
-    @include media-query(550) {
-        width: 50%;
-        float: left;
-        + .project__cta {
-            float: right;
-            border: 0;
-        }
-    }
-}
-
-.project__cta--single {
-    width: 100%;
-    border-right: 0;
 }
 
 .project__tools {
     clear: both;
-    padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 .project__tool {
@@ -205,24 +244,5 @@
 .git__shape,
 .compass__shape,
 .prepros__shape {
-    fill: #fff;
-}
-
-.project--inverted {
-    color: #1a1a1a;
-    .html5__text,
-    .html5__shield--left,
-    .html5__shield--right,
-    .css3__text,
-    .css3__shield--left,
-    .css3__shield--right,
-    .jquery__wave,
-    .sass__text,
-    .bem__shape,
-    .mixture__shape,
-    .git__shape,
-    .compass__shape,
-    .prepros__shape {
-        fill: #1a1a1a;
-    }
+    fill: $color--copy;
 }

@@ -16,30 +16,28 @@ h1 {
 	color: #333;
 	text-align: center;
 	margin: auto;
-	padding: 150px 30px 180px;
-	max-width: 50%;
-	font-size: em(40px);
+	padding: 40px 30px 70px;
+	font-size: em(20px);
 	line-height: 1.5;
 	font-weight: 400;
 	color: #666;
-}
-
-h2 {
-
-}
-
-h3 {
-    
+	br {
+		display: none;
+	}
+	@include media-query(450) {
+		br {
+			display: inline;
+		}
+	}
+	@include media-query(800) {
+		font-size: em(40px);
+		padding: 150px 30px 180px;
+	}
+	@include media-query(widescreen) {
+		max-width: 50%;
+	}
 }
 
 h4 {
-    
-}
-
-h5 {
-    
-}
-
-h6 {
-    
+	font-weight: 300;
 }

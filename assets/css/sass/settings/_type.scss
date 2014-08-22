@@ -1,11 +1,5 @@
 // #TYPE
 
-@import '../tools/css3/font-face';
-
-@include font-face(droid--serif, '../type/droid--serif');
-
-@include font-face(droid--sans, '../type/droid--sans');
-
 $font--copy: 'Roboto', helvetica, arial, sans-serif;
 
 $font--heading: $font--copy;

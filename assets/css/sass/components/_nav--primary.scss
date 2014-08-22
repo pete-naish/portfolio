@@ -30,7 +30,7 @@
 .nav--primary__link--text {
     font-size: em(18px);
     font-weight: 500;
-    color: #333;
+    color: $color--copy;
     vertical-align: middle;
     &:hover {
         border-bottom: 2px solid;
@@ -44,7 +44,7 @@
 .email__envelope,
 .cv__shape,
 .linkedin__square {
-    fill: #333;
+    fill: $color--copy;
 }
 
 .github__face {

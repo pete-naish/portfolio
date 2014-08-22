@@ -7,8 +7,16 @@
         @media all and (min-width: em(800px)) { @content; }   
     }
 
+    @if $breakpoint == 450 {
+        @media all and (min-width: em(450px)) { @content; }   
+    }
+
     @if $breakpoint == 550 {
         @media all and (min-width: em(550px)) { @content; }   
+    }
+
+    @if $breakpoint == 1200 {
+        @media all and (min-width: em(1200px)) { @content; }   
     }
 
     @if $breakpoint == mobile {

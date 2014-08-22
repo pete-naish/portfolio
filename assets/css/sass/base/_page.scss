@@ -1,17 +1,12 @@
 // #PAGE
 // Page-level styling, e.g. `html` and `body` elements, etc.
 
-// 1. One off bits of maths to get our base font size in ems and our base line height in a unitless value.
-
-html {
-
-}
-
 body {
+	font-size: $base--font-size;
 	margin: 0 auto;
 	max-width: 2362px;
 	background-color: #fff;
-	color: #fff;
+	color: $color--copy;
 	@include media-query(tablet-and-desktop) {
 		margin: 113px auto 0;
     }
