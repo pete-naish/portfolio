@@ -73,6 +73,12 @@
     margin: 0 30px 40px;
 }
 
+.link-note {
+    visibility: hidden;
+    clear: left;
+    margin-bottom: -20px;
+}
+
 .project__cta {
     @include prefix(transition, all .2s ease-out);
     @include prefix(border-radius, 3px);
@@ -95,6 +101,11 @@
     }
     + .project__cta {
         margin-right: 0;
+    }
+    &[href^="/"]:hover {
+        ~ .link-note {
+            visibility: visible;
+        }
     }
 }
 
