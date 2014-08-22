@@ -74,7 +74,9 @@
 }
 
 .link-note {
+    @include prefix(transition, all .2s ease-out);
     visibility: hidden;
+    opacity: 0;
     clear: left;
     margin-bottom: -20px;
 }
@@ -105,6 +107,7 @@
     &[href^="/"]:hover {
         ~ .link-note {
             visibility: visible;
+            opacity: 1;
         }
     }
 }
