@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.blog__post {
+    // margin: 0 30px;
+    padding: 50px 30px;
+    &:nth-child(odd) {
+        background-color:$color--grey--primary;
+    }
+    &:nth-child(even) {
+        background-color:$color--grey--secondary;   
+    }
+}
