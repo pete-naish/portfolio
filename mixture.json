@@ -14,7 +14,7 @@
     "serverHostname": null,
     "serverPort": null,
     "simpleModePartnerServer": null,
-    "templateDefaultLayout": "layout",
+    "templateDefaultLayout": "blog",
     "templateDefaultPage": "index",
     "templateDirectory": "templates",
     "type": "mixture",
