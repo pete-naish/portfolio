@@ -65,6 +65,7 @@
 
 .info__text {
     margin-bottom: 40px;
+    line-height: 1.4;
 }
 
 .project__actions {
@@ -81,7 +82,8 @@
     margin-bottom: -20px;
 }
 
-.project__cta {
+.project__cta,
+.article__cta {
     @include prefix(transition, all .2s ease-out);
     @include prefix(border-radius, 3px);
     font-family: $font--heading;

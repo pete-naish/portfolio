@@ -1,14 +1,18 @@
-<div class="paging">
-	{% if collection.previous %}
-		{% capture prev %}{{ collection.current_page | minus:1 }}{% endcapture %}
-		{% if prev == "1" %}
-			<a href="/blog/" class="previous">Previous</a>
-		{% else %}
-			<a href="/blog/page-{{ prev }}" class="previous">Previous</a>
-		{% endif %}
-	{% endif %}
-	<span>Showing items {{ collection.current_offset | plus: 1 }}-{% if collection.next %}{{ collection.current_offset | plus: collection.page_size }}{% else %}{{ collection.size }}{% endif %} of {{ collection.size }}</span>
-	{% if collection.next %}
-		<a href="/blog/page-{{ collection.current_page | plus:1 }}" class="next">Next</a>
-	{% endif %}
-</div>
+<section class="pagination">
+	<div class="wrapper">
+		<p>
+			{% if collection.previous %}
+				{% capture prev %}{{ collection.current_page | minus:1 }}{% endcapture %}
+				{% if prev == "1" %}
+					<a href="/blog/" class="pagination__previous">&lt; Previous</a>
+				{% else %}
+					<a href="/blog/page-{{ prev }}" class="pagination__previous">&lt; Previous</a>
+				{% endif %}
+			{% endif %}
+			Showing articles {{ collection.current_offset | plus: 1 }}&ndash;{% if collection.next %}{{ collection.current_offset | plus: collection.page_size }}{% else %}{{ collection.size }}{% endif %} of {{ collection.size }}
+			{% if collection.next %}
+				<a href="/blog/page-{{ collection.current_page | plus:1 }}" class="pagination__next">Next &gt;</a>
+			{% endif %}
+		</p>
+	</div>
+</section>

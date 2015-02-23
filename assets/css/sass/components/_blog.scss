@@ -1,6 +1,7 @@
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .blog__post {
@@ -11,5 +12,23 @@
     }
     &:nth-child(even) {
         background-color:$color--grey--secondary;   
+    }
+}
+
+.article__preview {
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.article__title {
+    color: $color--highlight;
+    margin-bottom: 20px;
+    a {
+        @include prefix(transition, all .1s ease-out);
+        color: inherit;
+        &:hover {
+            border-bottom: 2px solid $color--highlight;
+            
+        }
     }
 }

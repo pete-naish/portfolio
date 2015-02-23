@@ -1,6 +1,6 @@
 <article class="blog__post">
     <div class="wrapper">
-        <h2><a href="{{ article.slug }}">{{ article.title }}</a></h2>
+        <h2 class="article__title"><a href="{{ article.slug }}">{{ article.title }}</a></h2>
         {% assign post = article %}
         {% comment %}
         {% if forloop.first and currentpage == 1 %}
@@ -10,7 +10,8 @@
             <p>{{ article.body | strip_html | truncatewords:50,more }}</p>
         {% endif %}
         {% endcomment %}
-        {% capture more %}... <a href="{{ article.slug }}" class="more">Read the post in full</a>{% endcapture %}
-        <p>{{ article.body | strip_html | truncatewords:50,more }}</p>
+        {% capture more %}... {% endcapture %}
+        <p class="article__preview">{{ article.body | strip_html | truncatewords:50,more }}</p>
+        <a href="{{ article.slug }}" class="article__cta">Read article</a>
     </div>
 </article>

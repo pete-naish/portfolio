@@ -1,6 +1,9 @@
 {% layout "layout" %}
 {% block title %}Blog{% endblock %}
 {% block content %}
+    <section class="introduction">
+        <h1>The Blog</h1>
+    </section>
     <section class="blog">
         {% collection "blog" by 5 query 'tags={{mixture.route.tag}}' order desc %}
             {% if collection.current_page > collection.pages and collection.size > 0 %}
