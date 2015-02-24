@@ -7,6 +7,7 @@
             {{ article.body }}
         {% else %}
             {% capture more %}... <a href="{{ article.slug }}" class="more">Read the post in full</a>{% endcapture %}
+            
             <p>{{ article.body | strip_html | truncatewords:50,more }}</p>
         {% endif %}
         {% endcomment %}
