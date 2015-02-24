@@ -7,20 +7,12 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
     </head>
-    <body>
+    <body class="page--blog">
         {% include "header" %}
         <section class="introduction">
-            <h1>{{model.title}}</h1>
+            <h1>The Blog</h1>
         </section>
-        <section class="blog">
-            <article class="blog__post">
-                <div class="wrapper">
-                    {% assign post = model %}
-                    {% include "articles/date-tags" %}
-                    {% block content %}{% endblock %}
-                </div>
-            </article>
-        </section>
+        {% block content %}{% endblock %}
         {% include "scripts" %}
     </body>
 </html>

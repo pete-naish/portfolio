@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Pete Naish | {% block title %}{{model.title}}{% endblock %}</title>
+        {% include "meta-tags" %}
+        {% include "favicons" %}
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        {{ "app.css" | asset_url | stylesheet_tag }}
+    </head>
+    <body class="page--blog">
+        {% include "header" %}
+        <section class="introduction"{% if model.image or model.header-text-color %} style="{% if model.image %}background-image: url(/assets/img/content/{{model.image}});{% endif %}{% if model.header-text-color %} color: {{model.header-text-color}};{% endif %}"{% endif %}>
+            <h1>{{model.title}}</h1>
+        </section>
+        <section class="blog">
+            <article class="blog__post">
+                <div class="wrapper">
+                    {% assign post = model %}
+                    {% include "articles/date-tags" %}
+                    {% block content %}{% endblock %}
+                </div>
+            </article>
+        </section>
+        {% include "scripts" %}
+    </body>
+</html>

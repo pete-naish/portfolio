@@ -1,3 +1,20 @@
+.page--blog .introduction {
+    background-image: url(../img/content/banner--mountains.jpg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    h1 {
+        color: inherit;
+    }
+    + section {
+        padding-top: 390px;
+        position: relative;
+        z-index: 10;
+    }
+}
+
 .project {
 	overflow: hidden;
     &:nth-child(odd) {
