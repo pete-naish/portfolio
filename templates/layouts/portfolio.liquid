@@ -10,6 +10,9 @@
     <body>
         {% include "header" %}
         {% block content %}{% endblock %}
+        <script>
+        function scrollTo(o,n,t){var e=o.scrollTop,c=n-e,l=0,u=20,a=function(){l+=u;var n=Math.easeInOutQuad(l,e,c,t);o.scrollTop=n,t>l&&setTimeout(a,u)};a()}document.getElementsByClassName("logo")[0].onclick=function(e){e.preventDefault();scrollTo(document.body,0,500)},Math.easeInOutQuad=function(o,n,t,e){return o/=e/2,1>o?t/2*o*o+n:(o--,-t/2*(o*(o-2)-1)+n)};
+        </script>
         {% include "scripts" %}
     </body>
 </html>

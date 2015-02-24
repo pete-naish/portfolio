@@ -6,11 +6,36 @@
 
 .blog__post {
     padding: 50px 30px;
+    font-family: $font--copy;
+    line-height: 1.4;
     &:nth-child(odd) {
         background-color:$color--grey--primary;
     }
     &:nth-child(even) {
         background-color:$color--grey--secondary;   
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    ul,
+    ol,
+    pre {
+        margin-bottom: 20px;
+    }
+    h1 {
+
+    }
+    ul li {
+        list-style: disc;
+        margin-left: 30px;
+    }
+    ol li {
+        margin-left: 30px;
+    }
+    a {
+        color: $color--highlight;
     }
 }
 
