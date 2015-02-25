@@ -5,6 +5,7 @@ body {
 	background-color: #fff;
 	color: $color--copy;
 	font-family: $font--copy;
+	overflow-x: hidden;
 	@include media-query(tablet-and-desktop) {
 		margin: 113px auto 0;
     }

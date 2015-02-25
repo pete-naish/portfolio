@@ -11,6 +11,7 @@ pre[class*="language-"] {
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
+    word-wrap: normal;
     line-height: 1.5;
 }
 
@@ -105,7 +106,7 @@ pre[class*="language-"] {
 pre[class*='language-'] {
     position: relative;
     > code[data-language] {
-        overflow: scroll;
+        overflow: auto;
         max-height: 28em;
         display: block;
         font-size: em(14px);
