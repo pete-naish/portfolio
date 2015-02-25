@@ -29,7 +29,7 @@
 
 .nav--primary__link--text {
     @include prefix(transition, all .2s ease-out);
-    font-size: em(18px);
+    font-size: 1.2em; //19.2px
     font-weight: 500;
     color: $color--copy;
     vertical-align: middle;

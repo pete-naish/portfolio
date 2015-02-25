@@ -20,6 +20,9 @@
     "type": "mixture",
     "useCompass": false,
     "followLeader": false,
+    "sass": {
+        "useLibSass": true
+    },
     "routes": [
         {
             "route": "blog/page-:page",

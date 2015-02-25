@@ -1,4 +1,4 @@
-.page--blog .introduction {
+.introduction--fancy {
     background-image: url(../img/content/banner--mountains.jpg);
     color: #fff;
     background-position: center;
@@ -11,7 +11,7 @@
         position: fixed;
         width: 100%;
         h1 {
-            font-size: em(40px);
+            font-size: 2.488em; // 39.813px
             padding: 210px 30px 240px;
         }
         + section {
@@ -77,13 +77,15 @@
 .project__title {
     @include prefix(transition, background-color .2s ease-out);
     padding: 50px 30px 0;
-    font-size: em(30px);
+    font-size: 1.728em; //27.648px
     font-weight: 300;
     font-family: $font--heading;
 }
 
 .info__label {
-    font-size: em(20px);
+    // font-size: em(20px);
+    font-size: 1.44em; //23.04px
+    font-weight: 300;
     margin-bottom: 5px;
 }
 
@@ -111,7 +113,8 @@
     @include prefix(transition, all .2s ease-out);
     @include prefix(border-radius, 3px);
     font-family: $font--heading;
-    font-size: em(18px);
+    // font-size: em(18px);
+    font-size: 1.2em; //19.2px
     float: left;
     border: 1px solid $color--copy;
     padding: 12px 20px;
@@ -126,6 +129,7 @@
         background-color: $color--highlight;
         border: 1px solid $color--highlight;
         color: #fff;
+        margin-bottom: 20px;
     }
     + .project__cta {
         margin-right: 0;

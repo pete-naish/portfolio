@@ -34,4 +34,7 @@ a {
 
 p a {
 	display: inline-block;
+	&:hover {
+		margin-bottom: -2px;
+	}
 }

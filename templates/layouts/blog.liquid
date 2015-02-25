@@ -7,9 +7,9 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
     </head>
-    <body class="page--blog">
+    <body>
         {% include "header" %}
-        <section class="introduction">
+        <section class="introduction--fancy">
             <h1>The Blog</h1>
         </section>
         {% block content %}{% endblock %}
