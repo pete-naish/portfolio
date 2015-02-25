@@ -1,0 +1,53 @@
+.introduction {
+    h1 {
+        color: #333;
+        text-align: center;
+        margin: auto;
+        padding: 40px 30px 70px;
+        font-size: 1.2em; // 19.2px
+        line-height: 1.5;
+        font-weight: 400;
+        color: #666;
+        br {
+            display: none;
+        }
+        @include media-query(450) {
+            br {
+                display: inline;
+            }
+        }
+        @include media-query(800) {
+            // font-size: em(40px);
+            font-size: 2.488em; // 39.813px
+            padding: 150px 30px 180px;
+        }
+        @include media-query(widescreen) {
+            max-width: 50%;
+        }
+    }
+}
+
+.introduction--fancy {
+    @extend .introduction;
+    background-image: url(../img/content/banner--mountains.jpg);
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    h1 {
+        color: inherit;
+        padding: 85px 30px 85px;
+    }
+    @include media-query(800) {
+        position: fixed;
+        width: 100%;
+        h1 {
+            font-size: 2.488em; // 39.813px
+            padding: 210px 30px 240px;
+        }
+        + section {
+            position: relative;
+            z-index: 10;
+            padding-top: 510px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.button--positive {
+    @include prefix(transition, all .2s ease-out);
+    @include prefix(border-radius, 3px);
+    font-family: $font--heading;
+    // font-size: em(18px);
+    font-size: 1.2em; //19.2px
+    float: left;
+    border: 1px solid $color--copy;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    color: $color--copy;
+    background: transparent;
+    &:hover,
+    &:focus {
+        @include prefix(transition, all .1s ease-out);
+        outline: 0;
+        background-color: $color--highlight;
+        border: 1px solid $color--highlight;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    + .button--positive {
+        margin-right: 0;
+    }
+    &[href^="/"]:hover {
+        ~ .link-note {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
