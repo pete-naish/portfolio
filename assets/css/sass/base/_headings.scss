@@ -1,7 +1,3 @@
-
-// #HEADINGS
-// Heading-level styling
-
 h1,
 h2,
 h3,
@@ -10,35 +6,4 @@ h5,
 h6 {
 	font-weight: normal;
 	font-family: $font--heading;
-}
-
-h1 {
-	color: #333;
-	text-align: center;
-	margin: auto;
-	padding: 40px 30px 70px;
-	font-size: 1.2em; // 19.2px
-	line-height: 1.5;
-	font-weight: 400;
-	color: #666;
-	br {
-		display: none;
-	}
-	@include media-query(450) {
-		br {
-			display: inline;
-		}
-	}
-	@include media-query(800) {
-		// font-size: em(40px);
-		font-size: 2.488em; // 39.813px
-		padding: 150px 30px 180px;
-	}
-	@include media-query(widescreen) {
-		max-width: 50%;
-	}
-}
-
-h4 {
-	// font-weight: 300;
 }

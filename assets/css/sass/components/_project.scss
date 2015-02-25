@@ -1,27 +1,3 @@
-.introduction--fancy {
-    background-image: url(../img/content/banner--mountains.jpg);
-    color: #fff;
-    background-position: center;
-    background-size: cover;
-    h1 {
-        color: inherit;
-        padding: 85px 30px 85px;
-    }
-    @include media-query(800) {
-        position: fixed;
-        width: 100%;
-        h1 {
-            font-size: 2.488em; // 39.813px
-            padding: 210px 30px 240px;
-        }
-        + section {
-            position: relative;
-            z-index: 10;
-            padding-top: 510px;
-        }
-    }
-}
-
 .project {
 	overflow: hidden;
     &:nth-child(odd) {
@@ -106,40 +82,6 @@
     opacity: 0;
     clear: left;
     margin-bottom: -20px;
-}
-
-.project__cta,
-.article__cta {
-    @include prefix(transition, all .2s ease-out);
-    @include prefix(border-radius, 3px);
-    font-family: $font--heading;
-    // font-size: em(18px);
-    font-size: 1.2em; //19.2px
-    float: left;
-    border: 1px solid $color--copy;
-    padding: 12px 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    color: $color--copy;
-    background: transparent;
-	&:hover,
-    &:focus {
-        @include prefix(transition, all .1s ease-out);
-        outline: 0;
-        background-color: $color--highlight;
-        border: 1px solid $color--highlight;
-        color: #fff;
-        margin-bottom: 20px;
-    }
-    + .project__cta {
-        margin-right: 0;
-    }
-    &[href^="/"]:hover {
-        ~ .link-note {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
 }
 
 .project__tools {

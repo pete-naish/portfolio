@@ -1,30 +1,7 @@
 @charset 'UTF-8';
 
-// APP.SCSS
-
-// Here we start to pull everything together into one big stylesheet.
-// SETUP............Settings, tools, mixins, etc.
-// GENERIC..........normalize.css, reset, shared styles, etc.
-// BASE.............Basic HTML elements.
-// COMPONENTS.......Components and modules.
-
-// #SETUP
-// Settings, variables and tools.
-
 @import 'settings/all',
-        'tools/all';
-
-// #GENERIC
-// These are far reaching styles that affect and underpin every element on the page, e.g. `* {}`.
- 
-@import 'generic/all';
-
-// #BASE
-// These are base HTML elements, things with no classes on them, e.g. `h1 {}`, `blockquote {}`.
- 
-@import 'base/all';
-
-// #COMPONENTS
-// These are your components and modules; things like buttons, accordions, carousels, etc.
- 
-@import 'components/all';
+        'tools/all',
+        'generic/all',
+        'base/all',
+        'components/all';
