@@ -38,4 +38,22 @@
     ol li {
         margin-left: 40px;
     }
+    .float--left {
+        float: left;
+        margin-right: 20px;
+        max-width: 50%;
+    }
+    .float--right {
+        float: right;
+        margin-left: 20px;
+        max-width: 50%;
+    }
+}
+
+.code-wrapper {
+    background-color: #fff;
+    margin-left: -2000px;
+    margin-right: -2000px;
+    padding-left: 2000px;
+    padding-right: 2000px;
 }

@@ -1,0 +1,124 @@
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+scss+bash+git+handlebars+markdown+jsx&plugins=line-numbers+show-language+highlight-keywords */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    @include prefix(tab-size, 4);
+    @include prefix(hyphens, none);
+    color: $color--copy;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.5;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 0 20px;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: #fff;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: slategray;
+}
+
+.token.punctuation {
+    color: #999;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #07a;
+}
+
+.token.function {
+    color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #e90;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre[class*='language-'] {
+    position: relative;
+    > code[data-language] {
+        overflow: scroll;
+        max-height: 28em;
+        display: block;
+        font-size: em(14px);
+        &:before {
+            content: attr(data-language);
+            color: $color--copy;
+            background-color: $color--grey--primary;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 5px;
+            padding: 0 .5em;
+        }
+    }
+}
