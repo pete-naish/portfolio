@@ -3,16 +3,22 @@
     color: #fff;
     background-position: center;
     background-size: cover;
-    position: fixed;
-    width: 100%;
     h1 {
         color: inherit;
-        padding: 210px 30px 240px;
+        padding: 85px 30px 85px;
     }
-    + section {
-        padding-top: 510px;
-        position: relative;
-        z-index: 10;
+    @include media-query(800) {
+        position: fixed;
+        width: 100%;
+        h1 {
+            font-size: em(40px);
+            padding: 210px 30px 240px;
+        }
+        + section {
+            position: relative;
+            z-index: 10;
+            padding-top: 510px;
+        }
     }
 }
 
@@ -118,7 +124,7 @@
         @include prefix(transition, all .1s ease-out);
         outline: 0;
         background-color: $color--highlight;
-        border-color: $color--highlight;
+        border: 1px solid $color--highlight;
         color: #fff;
     }
     + .project__cta {
@@ -167,6 +173,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    &:hover {
+        border: 0;
+    }
     &:hover + svg,
     &:active + svg,
     &:focus + svg {

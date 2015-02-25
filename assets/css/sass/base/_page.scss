@@ -7,6 +7,7 @@ body {
 	max-width: 2362px;
 	background-color: #fff;
 	color: $color--copy;
+	font-family: $font--copy;
 	@include media-query(tablet-and-desktop) {
 		margin: 113px auto 0;
     }
@@ -17,6 +18,20 @@ img {
 	display: block;
 }
 
-p {
-	font-family: $font--copy;
+a {
+	color: $color--highlight;
+	text-decoration: none;
+	outline: 0;
+	@include prefix(transition, all .2s ease-out);
+	&:hover {
+		@include prefix(transition, all .1s ease-out);
+		border-bottom: 2px solid;
+	}
+	&:focus {
+		outline: 0;
+	}
+}
+
+p a {
+	display: inline-block;
 }

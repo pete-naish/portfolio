@@ -34,7 +34,7 @@
     ol li {
         margin-left: 30px;
     }
-    a {
+    p a {
         color: $color--highlight;
     }
 }
@@ -48,11 +48,11 @@
     color: $color--highlight;
     margin-bottom: 20px;
     a {
-        @include prefix(transition, all .1s ease-out);
+        @include prefix(transition, all .2s ease-out);
         color: inherit;
         &:hover {
-            border-bottom: 2px solid $color--highlight;
-            
+            @include prefix(transition, all .1s ease-out);
+            border-bottom: 2px solid;
         }
     }
 }
