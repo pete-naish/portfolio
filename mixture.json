@@ -33,9 +33,15 @@
             "route": "blog/tag/:tag",
             "template": "blog",
             "redirect": null
+        },
+        {
+            "route": "index",
+            "template": "portfolio",
+            "redirect": null
         }
     ],
     "convertHtml": {
-        "relativePaths": false
+        "relativePaths": false,
+        "default": null
     }
 }
