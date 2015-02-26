@@ -30,11 +30,11 @@
 .introduction--fancy {
     @extend .introduction;
     background-image: url(../img/content/banner--mountains.jpg);
-    color: #fff;
     background-position: center;
     background-size: cover;
     h1 {
-        color: inherit;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        color: #fff;
         padding: 85px 30px 85px;
     }
     @include media-query(800) {

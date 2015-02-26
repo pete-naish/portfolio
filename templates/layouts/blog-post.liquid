@@ -4,12 +4,12 @@
         <title>Pete Naish | {% block title %}{{model.title}}{% endblock %}</title>
         {% include "meta-tags" %}
         {% include "favicons" %}
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
     </head>
     <body>
         {% include "header" %}
-        <section class="introduction--fancy"{% if model.image or model.header-text-color %} style="{% if model.image %}background-image: url(/assets/img/content/{{model.image}});{% endif %}{% if model.header-text-color %} color: {{model.header-text-color}};{% endif %}"{% endif %}>
+        <section class="introduction--fancy"{% if model.image %}style="background-image: url(/assets/img/content/{{model.image}});"{% endif %}>
             <h1>{{model.title}}</h1>
         </section>
         <section class="blog">

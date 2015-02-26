@@ -38,6 +38,18 @@
     ol li {
         margin-left: 40px;
     }
+    blockquote {
+        font-family: $font--fancy;
+        font-size: 1.44em; //27.648px
+        text-align: center;
+        padding: 40px 60px;
+        margin-bottom: 20px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        p {
+            margin-bottom: 0;
+        }
+    }
     .float--left {
         float: left;
         margin-right: 20px;
