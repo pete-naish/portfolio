@@ -44,8 +44,9 @@
         text-align: center;
         padding: 40px 60px;
         margin-bottom: 20px;
-        border-top: 1px solid #ccc;
-        border-bottom: 1px solid #ccc;
+        border: 2px solid #ccc;
+        border-left: 0;
+        border-right: 0;
         p {
             margin-bottom: 0;
         }
