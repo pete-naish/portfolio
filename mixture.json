@@ -1,42 +1,45 @@
 {
-    "debug": true,
-    "domain": null,
-    "lintScripts": false,
-    "modelSource": null,
-    "preprocessorLocations": [
-        "assets"
-    ],
-    "preprocessorScriptOutput": "assets/js",
-    "preprocessorStyleOutput": "assets/css",
-    "projectDescription": "Pete Naish\u0027s Development Portfolio",
-    "projectName": "portfolio",
-    "publishedId": null,
-    "serverHostname": null,
-    "serverPort": null,
-    "simpleModePartnerServer": null,
-    "templateDefaultLayout": "portfolio",
-    "templateDefaultPage": "index",
-    "templateDirectory": "templates",
-    "type": "mixture",
-    "useCompass": false,
-    "followLeader": false,
-    "sass": {
-        "useLibSass": true
+  "convertHtml": {
+    "default": null,
+    "relativePaths": false
+  },
+  "debug": true,
+  "domain": null,
+  "followLeader": false,
+  "ignoreDir": [
+    "models/"
+  ],
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": [
+    "assets"
+  ],
+  "preprocessorScriptOutput": "assets/js",
+  "preprocessorStyleOutput": "assets/css",
+  "projectDescription": "Pete Naish's Development Portfolio",
+  "projectName": "portfolio",
+  "publishedId": null,
+  "routes": [
+    {
+      "redirect": null,
+      "route": "blog/page-:page",
+      "template": "blog"
     },
-    "routes": [
-        {
-            "route": "blog/page-:page",
-            "template": "blog",
-            "redirect": null
-        },
-        {
-            "route": "blog/tag/:tag",
-            "template": "blog",
-            "redirect": null
-        }
-    ],
-    "convertHtml": {
-        "relativePaths": false,
-        "default": null
+    {
+      "redirect": null,
+      "route": "blog/tag/:tag",
+      "template": "blog"
     }
+  ],
+  "sass": {
+    "useLibSass": true
+  },
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "portfolio",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
 }

@@ -1,18 +1,18 @@
 {% layout "none" %}
 {% contenttype "application/xml" %}
 <rss version="2.0">
-	<channel>
-		<generator>Mixture</generator>
-		<title>{{ global.title }}</title>
-		<link>{{ global.domain }}</link>
-		<description>{{ global.intro }}</description>
-		<language>en</language>
-		<webMaster>{{ global.email }}</webMaster>
-		<copyright>{{ 'now' | date: "%Y" }}</copyright>
-		<pubDate>Fri, 27 Feb 2015 13:00:00 GMT</pubDate>
-		<lastBuildDate>Fri, 27 Feb 2015 13:00:00 GMT</lastBuildDate>
-		{% collection "article" by 10 order desc %}
-			{% include "articles/rss-item" with collection.items %}
-		{% endcollection %}
-	</channel>
+    <channel>
+        <atom:link href="http://pete.nai.sh/blog/" rel="self" type="application/rss+xml" />
+        <title>{{ global.title }}</title>
+        <link>{{ global.domain }}</link>
+        <description>{{ global.intro }}</description>
+        <language>en</language>
+        <webMaster>{{ global.email }}</webMaster>
+        <copyright>{{ 'now' | date: "%Y" }}</copyright>
+        <pubDate>Fri, 27 Feb 2015 13:00:00 GMT</pubDate>
+        <lastBuildDate>Fri, 27 Feb 2015 13:00:00 GMT</lastBuildDate>
+        {% collection "blog" by 10 order desc %}
+            {% include "articles/rss-item" with collection.items %}
+        {% endcollection %}
+    </channel>
 </rss>

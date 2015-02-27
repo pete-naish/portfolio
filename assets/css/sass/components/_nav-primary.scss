@@ -10,9 +10,9 @@
 .nav-primary__item {
     font-family: $font--heading;
     list-style: none;
-    float: left;
     margin-right: 20px;
-    position: relative;
+    display: inline-block;
+    vertical-align: middle;
     svg {
         width: 30px;
         height: 30px;
