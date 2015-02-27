@@ -1,7 +1,7 @@
 <item>
     <title>{{ rss-item.title | html_encode }}</title>
-    <link>{{ global.domain }}{{ rss-item.slug }}</link>
-    <guid>{{ rss-item.slug }}</guid>
+    <link>http://pete.nai.sh{{ rss-item.slug }}</link>
+    <guid>http://pete.nai.sh{{ rss-item.slug }}</guid>
     {% for category in rss-item.categories %}
     <category>{{ category | html_encode }}</category>
     {% endfor %}
