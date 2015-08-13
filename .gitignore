@@ -30,3 +30,4 @@ converted-html
 .jshintrc
 .scss-lint.yml
 .ftpsettings
+node_modules/
