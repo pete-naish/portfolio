@@ -9,7 +9,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
-        
+
         // browser sync - maps your local site to an ip address that you can visit with other devices on the same network
         // run using grunt sync, then copy the External URL.
         browserSync: {
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
         },
 
         concurrent: {
-          first: ['jshint', 'sass'],
+          first: ['sass'],
           second: ['autoprefixer']
         },
 
@@ -89,8 +89,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('sync', ['browserSync']);
  
-  grunt.registerTask('images', ['newer:tinypng']);
-
   grunt.event.on('watch', function (action, filepath, target) {
     //change the source and destination in the uglify task at run time so that it affects the changed file only
 

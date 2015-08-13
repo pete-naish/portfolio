@@ -10,16 +10,16 @@
         <p class="info__text">Latest browsers across mobile and desktop, including Internet Explorer 8+</p>
         <ul class="project__tools">
             <li class="project__tool">
-                {% include "icons/icon--html5" %}
+                <?php include 'templates/includes/icons/icon--html5.php'; ?>
             </li>
             <li class="project__tool">
-                {% include "icons/icon--css3" %}
+                <?php include 'templates/includes/icons/icon--css3.php'; ?>
             </li>
             <li class="project__tool">
-                {% include "icons/icon--jquery" %}
+                <?php include 'templates/includes/icons/icon--jquery.php'; ?>
             </li>
             <li class="project__tool">
-                {% include "icons/icon--git" %}
+                <?php include 'templates/includes/icons/icon--git.php'; ?>
             </li>
         </ul>
     </div>

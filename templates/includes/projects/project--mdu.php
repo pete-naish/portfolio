@@ -10,13 +10,13 @@
         <p class="info__text">Latest desktop browsers, and Internet Explorer 7+</p>
         <ul class="project__tools">
             <li class="project__tool">
-                {% include "icons/icon--jquery" %}
+                <?php include 'templates/includes/icons/icon--jquery.php'; ?>
             </li>
             <li class="project__tool">
-                {% include "icons/icon--sass" %}
+                <?php include 'templates/includes/icons/icon--sass.php'; ?>
             </li>
             <li class="project__tool">
-                {% include "icons/icon--git" %}
+                <?php include 'templates/includes/icons/icon--git.php'; ?>
             </li>
         </ul>
     </div>
