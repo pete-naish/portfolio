@@ -1,7 +1,7 @@
 .blog__post {
     padding: 50px 30px;
     font-family: $font--copy;
-    line-height: 1.4;
+    line-height: 1.45;
     &:nth-child(odd) {
         background-color:$color--grey--primary;
     }
@@ -19,16 +19,29 @@
     pre {
         margin-bottom: 20px;
     }
-    h2 {
+    p {
+        margin-bottom: 1.3em;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin: 1.414em 0 .5em;
+        line-height: 1.2;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    h1 {
         font-size: 2.074em; //33.178px
     }
-    h3 {
+    h2 {
         font-size: 1.728em; //27.648px
     }
-    h4 {
+    h3 {
         font-size: 1.44em; //23.04px
     }
-    h5 {
+    h4 {
         font-size: 1.2em; // 19.2px
     }
     ul li {
