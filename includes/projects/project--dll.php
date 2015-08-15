@@ -10,22 +10,34 @@
         <p class="info__text">Latest browsers spanning mobile, tablet, and desktop, including Internet Explorer 8+</p>
         <ul class="project__tools">
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--html5.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--html5.php");
+                ?>
             </li>
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--css3.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--css3.php");
+                ?>
             </li>
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--jquery.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--jquery.php");
+                ?>
             </li>
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--prepros.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--prepros.php");
+                ?>
             </li>
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--sass.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--sass.php");
+                ?>
             </li>
             <li class="project__tool">
-                <?php include 'templates/includes/icons/icon--git.php'; ?>
+                <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--git.php");
+                ?>
             </li>
         </ul>
     </div>
