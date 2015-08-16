@@ -1,0 +1,173 @@
+.helpLinks,
+.labelLinks,
+header .fixedHeight,
+.infoText,
+.siteSearch,
+.setLocation,
+.mainNav,
+.tabbed,
+.heroPanelWrap,
+.localSupport,
+.iconBigText,
+.cta,
+.ctaInline,
+.box .cta,
+.socialLinks,
+.blockLinks,
+.footerLinks,
+.cookies,
+.navLinks,
+.cufon canvas,
+.sideNav,
+.postCodeSearch,
+.pointerOverlay,
+.pointer,
+.storyGalleryNav,
+.storyGalleryWrapper,
+.searchBox,
+.paymentMethods,
+.shopCategories,
+.breadcrumb,
+.linkList,
+.sideBar {
+	display:none !important;
+}
+
+* {
+	font-size:14px !important;
+	text-transform: none !important;
+}
+
+.wrapper > .container_12 {
+	padding:0;
+}
+
+.cufonText {
+	color:#333;
+}
+
+.bigInfo {
+	margin-bottom:0;
+}
+
+blockquote,
+p,
+img,
+h1, h2, h3, h4, h5, h6,
+.box > a,
+.stackedContent div,
+.box .grid_1_w,
+ul,
+.blockGrid .grid_4 {
+	clear:both;
+}
+
+.blockGrid .grid_4 {
+	border:0;
+}
+
+
+.box,
+.socialFeeds > div,
+footer {
+	width:100% !important;
+	clear:both;
+	border-top:0;
+	background-color:#fff;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.box {
+	padding-top:0;
+}
+
+.box > h3,
+.box > h4,
+.box > img,
+.box > p,
+.box > a,
+.box > ul,
+.box > div,
+.grid_1,
+.grid_2,
+.grid_3,
+.sideNav,
+.sideBar,
+.grid_4,
+.grid_5,
+.grid_6,
+.mainContent,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.container_12 .grid_1_w,
+.container_12 .grid_1_2,
+.container_12 .grid_2_w,
+.container_12 .grid_3_w {
+	margin:0;
+	margin-bottom:20px;
+}
+
+.waffle,
+.shadow,
+footer,
+.accordion h3 {
+	background:none;
+	color:#333;
+}
+
+.bigInfo,
+.facebook .feed,
+.stackedContent div,
+.box .grid_1_w {
+	border:0;
+	text-align:left;
+	/*font-size:1.2em;*/
+}
+
+.container_12 .prefix_4 {
+	padding-left:0;
+}
+
+.container_12 .mainContent,
+.container_12 .sideNavSpacer,
+.sideNavSpacer .box,
+.stackedContent p,
+.stackedContent .ctaInline,
+.postSnippet h3,
+.postSnippet p {
+	margin-left:0;
+}
+
+footer p {
+	padding-top:10px;
+	border-top:1px solid #ccc;
+	font-weight:normal;
+	text-align:left;
+}
+
+.facebook .feed {
+	padding-left:50px;
+	background-position:left 5px;
+}
+
+.mainContent blockquote {
+	width:100%;
+	margin-left:0;
+	padding-left:0;
+	padding-right:0;
+	background:none;
+}
+
+.accordion h3 {
+
+}
+
+.accordionContent {
+	display:block !important;
+}

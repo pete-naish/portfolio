@@ -1,0 +1,25 @@
+.tab h3 {
+	background-color: #006a8e;
+}
+
+.navLinks a {
+	background: url(../img/frame/sprite.png) no-repeat #000;
+}
+
+.navLinks a:hover {
+	background-color:#333;
+}
+
+.cookieInfo {
+	background:url(../img/frame/cookieDude.png) no-repeat 15px 10px #323232;
+}
+
+.searchPublications .grid_1_w {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.itemAction form fieldset:first-child {
+	width:200px;
+}

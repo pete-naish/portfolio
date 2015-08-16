@@ -1,0 +1,52 @@
+table {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+thead {
+	display: block;
+	float: left;
+}
+
+tbody {
+	display: block;
+	width: auto;
+	position: relative;
+	overflow-x: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+thead tr {
+	display: block;
+}
+
+th {
+	display: block;
+}
+
+tbody tr {
+	display: inline-block;
+}
+
+td {
+	display: block;
+}
+
+.rt {
+	border: 0;
+}
+
+.rt th {
+	border-bottom: 1px solid $light-grey;
+}
+
+.rt tbody {
+	border-top: 1px solid $light-grey;
+	border-right: 1px solid $light-grey;
+}
+
+.rt tr:last-child td {
+	border-right: 0;
+}

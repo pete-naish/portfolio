@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /central/
+Disallow: /david-lloyd/
+Disallow: /mdu/
+Disallow: /parkinsons/
+Disallow: /fscs/
+Disallow: /bbs/

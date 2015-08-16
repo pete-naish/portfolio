@@ -1,0 +1,9 @@
+.mainNav .home a {
+	padding:10px 14px;
+	background-position: -43px 13px;
+}
+
+.mainNav .home.active a,
+.mainNav .home a:hover {
+	background-position: -43px -23px;
+}

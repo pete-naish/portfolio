@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="http://pete.nai.sh/rss.xml" rel="self" type="application/rss+xml" />
+        <title>Pete Naish's Blog</title>
+        <link>http://pete.nai.sh/blog</link>
+        <description>Front-end dev focused tips and workflow improvements</description>
+        <language>en</language>
+        <webMaster>pete@nai.sh (Pete Naish)</webMaster>
+        <copyright>2015</copyright>
+        <pubDate>Fri, 27 Feb 2015 13:00:00 GMT</pubDate>
+        <lastBuildDate>Fri, 27 Feb 2015 13:00:00 GMT</lastBuildDate>
+        
+            <item>
+    <title>Hey</title>
+    <link>http://pete.nai.sh/blog/about</link>
+    <guid>http://pete.nai.sh/blog/about</guid>
+    
+    <pubDate>Thu, 26 Feb 2015 00:00:00 GMT</pubDate>
+    <description>I&#39;ve been a professional front-end developer since 2009. Before that, I was a front-end hobbyist and amateur tinkerer, and I&#39;ve always enjoyed using computers. Back when I was a young teenager, my dad brought home our first &#39;proper&#39; computer. I wreaked havoc on it, blindly installing shit like BonziBuddy and...</description>
+</item>
+        
+    </channel>
+</rss>

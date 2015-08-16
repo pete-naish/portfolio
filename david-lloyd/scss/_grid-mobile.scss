@@ -1,0 +1,46 @@
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container-grid {
+	padding: 0 20px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7,
+.grid-8 {
+	display:inline;
+	float: left;
+	position: relative;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+// .alpha {
+// 	margin-left: 0;
+// }
+
+// .omega {
+// 	margin-right: 0;
+// }
+
+/* Grid >> 8 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container-grid .grid-1,
+.container-grid .grid-2,
+.container-grid .grid-3,
+.container-grid .grid-4,
+.container-grid .grid-5,
+.container-grid .grid-6,
+.container-grid .grid-7,
+.container-grid .grid-8 {
+	width: 100%;
+}

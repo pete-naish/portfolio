@@ -1,0 +1,160 @@
+::-moz-selection {
+	background: lighten($highlight, 25%);
+	text-shadow: none;
+}
+
+::selection {
+	background: lighten($highlight, 25%);
+	text-shadow: none;
+}
+
+* {
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit],
+textarea {
+	-webkit-appearance: none;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+img {
+	vertical-align: middle;
+}
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: vertical;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.ir,
+.logo,
+.icon-only > a,
+.icon-only-mobile > a,
+.bx-controls a,
+.icon-help,
+.icon-error {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	*text-indent: -9999px;
+}
+
+.ir:before,
+.logo:before,
+.icon-only > a:before,
+.icon-only-mobile > a:before,
+.bx-controls a:before,
+.icon-help:before,
+.icon-error:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 200%;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.hidden-visually {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.hidden-visually.focusable:active,
+.hidden-visually.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.cf:before,
+.cf:after,
+section:before,
+section:after,
+header:before,
+header:after,
+footer:before,
+footer:after,
+.container:before,
+.container:after,
+.container-grid:before,
+.container-grid:after,
+.separator:before,
+.separator:after {
+	content: " ";
+	display: table;
+}
+
+.cf:after,
+section:after,
+header:after,
+footer:after,
+.container:after,
+.container-grid:after,
+.separator:after {
+	clear: both;
+}
+
+.cf,
+section,
+header,
+footer,
+.container,
+.container-grid,
+.separator {
+	*zoom: 1;
+}
+
+.no-wrap {
+	overflow: hidden;
+}

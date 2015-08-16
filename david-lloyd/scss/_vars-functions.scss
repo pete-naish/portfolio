@@ -1,0 +1,29 @@
+@include font-face("Bebas Neue", font-files("BebasNeue-webfont.eot", "BebasNeue-webfont.eot?#iefix", "BebasNeue-webfont.woff", "BebasNeue-webfont.ttf", "BebasNeue-webfont.svg#BebasNeueRegular"));
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+@function percent($px, $base: $base-grid-width) {
+	@return (($px / $base) * 100) * 1%; 
+}
+
+@mixin rgba($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+$base-font-size: 14px;
+$base-line-height: 24px;
+$base-width: 820px;
+$base-grid-width: 800px;
+$body-font-family: Arial, Helvetica, sans-serif;
+$heading-font-family: "Bebas Neue", Helvetica, Arial, sans-serif;
+
+$white: #fff;
+$highlight: #8dc63f; //green
+$highlight-alt: #a43787; //pink
+$light-grey: #eaeaea;
+$mid-grey: #dadada;
+$dark-grey: #666;
+$darkest-grey: #333;

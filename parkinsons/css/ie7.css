@@ -1,0 +1,244 @@
+.box {
+	padding-bottom: 20px;
+} 
+
+.tab h3 {
+	background-color: #006a8e;
+}
+
+.navLinks a {
+	background: url(../img/frame/sprite.png) no-repeat #000;
+}
+
+.navLinks a:hover {
+	background-color:#333;
+}
+
+.cookieInfo {
+	background:url(../img/frame/cookieDude.png) no-repeat 15px 10px #323232;
+}
+
+.setLocation {
+	float:left;
+	width:200px;
+	margin-left:265px;
+}
+
+.setLocationPage .cta {
+	width:110px;
+}
+
+.setLocationPage {
+	width:360px;
+	height:130px;
+}
+
+.siteSearch .inlineButton {
+	font-size:0;
+	top:1px;
+}
+
+.mainNav .home.active,
+.mainNav .home:hover {
+	background-color:#fff;
+	height:38px;
+}
+
+.mainNav .home a {
+	text-indent:0;
+	font-size:0;
+	line-height:0;
+	height:17px;
+	padding:10px 17px;
+}
+
+.localSupport .cta {
+	padding:4px 5px;
+	border:none;
+}
+
+.localSupport #supportPostcode {
+	margin-top:-47px;
+}
+
+.sideNav ul {
+	margin-top:-15px;
+}
+
+.flyoutForm form a {
+	float:left;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+.sideBar .flyoutForm form a {
+	margin-top:8px;
+}
+
+.flyoutForm .iForgot {
+	clear:both;
+}
+
+.flyoutForm input.cta {
+	padding:5px;
+}
+
+.wrapper .postCodeSearch .cta {
+	padding:3px 4px;
+}
+
+.sideBar .shopItem .price,
+.sideBar .shopItem .description {
+	width:160px;
+}
+
+.sideBar .shopItem .cta {
+	float:left;
+}
+
+.largerText .extraInfo {
+	width:270px;
+}
+
+.sideBar .box > a,
+.sideBar .box > p.extraInfo {
+	width:160px;
+}
+
+.sideBar .box > a.cta {
+	width:auto;
+}
+
+.mainContent .postSnippet {
+	float:left;
+	clear:both;
+	width:490px;
+}
+
+.mainContent .postSnippet .avatar {
+	padding-bottom:15px;
+}
+
+.mainContent .postSnippet div {
+	float:left;
+	width:400px;
+	border:0;
+}
+
+.mainContent .postSnippet div p,
+.mainContent .postSnippet div h3 {
+	margin-left:0;
+}
+
+.itemAction .extraInfo {
+	width:195px;
+}
+
+.wrapper .itemAction .cta {
+	display:block;
+	float:left;
+	width:120px;
+}
+
+.itemAction form {
+	margin-left:15px;
+	margin-top:-15px;
+}
+
+.itemAction fieldset {
+	padding:0;
+	margin:0;
+	margin-bottom:15px;
+}
+
+.itemAction #itemQuantity {
+	margin-left:-10px;
+}
+
+fieldset legend {
+	margin-left:-5px;
+}
+
+.itemAction .sharer li:first-child {
+	width:195px;
+}
+
+.box .wishlist {
+	margin-top:0;
+}
+
+.sideBar .box h4 {
+	width:160px;
+}
+
+.sideBar .searchBox fieldset {
+	width:160px;
+}
+
+.sideBar .searchBox {
+	overflow:hidden;
+}
+
+.sideBar .searchBox form {
+	float:left;
+}
+
+.sideBar .searchBox #searchShop {
+	margin-left:-15px;
+	width:90px;
+}
+
+.searchPublications .grid_1_w {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.searchPublications .grid_1_w .cta {
+	padding:4px 2px;
+}
+
+.grid_1_w .extraInfo {
+	width:200px;
+}
+
+.sideBar .feed {
+	width:160px;
+}
+
+.sideBar .box .twitter,
+.sideBar .box .facebook {
+	width:160px;
+	padding:0;
+	height:29px;
+
+}
+
+.box.grid_4 .extraInfo {
+	width:270px;
+}
+
+.sideBar .shopCategories {
+	width:160px;
+}
+
+.sideBar .searchBox #eventKeyword {
+	margin-left:-14px;
+}
+
+.sideBar .searchBox .cta {
+	padding:5px 3px;
+}
+
+.sideBar .searchBox .datePicker {
+	margin-left:-14px;
+}
+
+.sideBar .searchBox label {
+	width:140px;
+	margin-top: 5px
+}
+
+.mapLegend li {
+	zoom:1;
+}
