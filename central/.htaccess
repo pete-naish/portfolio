@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Email pete@nai.sh for login details"
-AuthUserFile /var/www/vhosts/pw/.htpasswd
-require valid-user
