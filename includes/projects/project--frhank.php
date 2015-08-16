@@ -1,11 +1,11 @@
 <article class="project">
-    <h3 class="project__title">Royal Central School of Speech and Drama</h3>
-    <img class="project__image" src="/assets/img/content/project--precedent__central-school-speech-drama.png">
+    <h3 class="project__title">Mattessons Frhank Microsite</h3>
+    <img class="project__image" src="/assets/img/content/project--saatchi__frhank.png">
     <div class="project__info">
         <h4 class="info__label">Project brief</h4>
-        <p class="info__text">To rebuild their existing site as a fully-responsive, mobile-first experience with a Drupal back-end<br/> Accessible to AA standards</p>
+        <p class="info__text">To create a single-page, fully-responsive, mobile-first static website to showcase brand and identity guidelines</p>
         <h4 class="info__label">My role</h4>
-        <p class="info__text">Developing all HTML, CSS, and JavaScript in a component-based, reusable way</p>
+        <p class="info__text">Developing all HTML, CSS, and JavaScript assets for the project</p>
         <h4 class="info__label">Browser support</h4>
         <p class="info__text">Latest browsers spanning mobile, tablet, and desktop, including Internet Explorer 9+</p>
         <ul class="project__tools">
@@ -47,7 +47,7 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/central/">View front-end templates</a>
-        <a class="button--positive" href="http://www.cssd.ac.uk/">View live website</a>
+        <a class="button--positive" href="/bbs/">View front-end templates</a>
+        <a class="button--positive" href="http://www.bbsguidelines.bham.ac.uk/">View live website</a>
     </div>
 </article>

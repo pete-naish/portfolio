@@ -47,7 +47,7 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/bbs/" title="Password protected. Email pete@nai.sh for login details">View front-end templates</a>
+        <a class="button--positive" href="/bbs/">View front-end templates</a>
         <a class="button--positive" href="http://www.bbsguidelines.bham.ac.uk/">View live website</a>
     </div>
 </article>

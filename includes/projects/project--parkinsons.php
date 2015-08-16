@@ -22,7 +22,7 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/parkinsons/" title="Password protected. Email pete@nai.sh for login details">View front-end templates</a>
+        <a class="button--positive" href="/parkinsons/">View front-end templates</a>
         <a class="button--positive" href="http://www.parkinsons.org.uk/">View live website</a>
     </div>
 </article>

@@ -15,27 +15,14 @@
         </section>
         <section class="project-listing">
             <?php 
+               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--frhank.php");
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bbs.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--central.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--dll.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bb.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--fscs.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--parkinsons.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--mdu.php");
-            ?>
-            <?php 
                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--cp.php");
             ?>
         </section>
