@@ -75,14 +75,6 @@
     margin: 0 30px 40px;
 }
 
-.link-note {
-    @include prefix(transition, all .2s ease-out);
-    visibility: hidden;
-    opacity: 0;
-    clear: left;
-    margin-bottom: -20px;
-}
-
 .project__tools {
     clear: both;
     margin-bottom: 20px;

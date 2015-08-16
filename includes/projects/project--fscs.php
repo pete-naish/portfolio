@@ -33,6 +33,5 @@
     </div>
     <div class="project__actions">
         <a class="button--positive" href="/fscs/" title="Password protected. Email pete@nai.sh for login details">View website</a>
-        <p class="link-note">Email pete@nai.sh for login details</p>
     </div>
 </article>

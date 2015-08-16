@@ -44,6 +44,5 @@
     <div class="project__actions">
         <a class="button--positive" href="/david-lloyd/" title="Password protected. Email pete@nai.sh for login details">View front-end templates</a>
         <a class="button--positive" href="http://www.davidlloyd.co.uk/">View live website</a>
-        <p class="link-note">Email pete@nai.sh for login details</p>
     </div>
 </article>
