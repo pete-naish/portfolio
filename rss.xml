@@ -7,17 +7,21 @@
         <language>en</language>
         <webMaster>pete@nai.sh (Pete Naish)</webMaster>
         <copyright>2015</copyright>
-        <pubDate>Fri, 27 Feb 2015 13:00:00 GMT</pubDate>
-        <lastBuildDate>Fri, 27 Feb 2015 13:00:00 GMT</lastBuildDate>
-        
-            <item>
-    <title>Hey</title>
-    <link>http://pete.nai.sh/blog/about</link>
-    <guid>http://pete.nai.sh/blog/about</guid>
-    
-    <pubDate>Thu, 26 Feb 2015 00:00:00 GMT</pubDate>
-    <description>I&#39;ve been a professional front-end developer since 2009. Before that, I was a front-end hobbyist and amateur tinkerer, and I&#39;ve always enjoyed using computers. Back when I was a young teenager, my dad brought home our first &#39;proper&#39; computer. I wreaked havoc on it, blindly installing shit like BonziBuddy and...</description>
-</item>
-        
+        <pubDate>Mon, 17 Aug 2015 00:00:00 GMT</pubDate>
+        <lastBuildDate>Mon, 17 Aug 2015 00:00:00 GMT</lastBuildDate>
+        <item>
+            <title>Hey</title>
+            <link>http://pete.nai.sh/blog/about</link>
+            <guid>http://pete.nai.sh/blog/about</guid>
+            <pubDate>Thu, 26 Feb 2015 00:00:00 GMT</pubDate>
+            <description>I&#39;ve been a professional front-end developer since 2009. Before that, I was a front-end hobbyist and amateur tinkerer, and I&#39;ve always enjoyed using computers. Back when I was a young teenager, my dad brought home our first &#39;proper&#39; computer. I wreaked havoc on it, blindly installing shit like BonziBuddy and...</description>
+        </item>
+        <item>
+            <title>Hey</title>
+            <link>http://pete.nai.sh/blog/from-less-to-sass</link>
+            <guid>http://pete.nai.sh/blog/from-less-to-sass</guid>
+            <pubDate>Mon, 17 Aug 2015 00:00:00 GMT</pubDate>
+            <description>Saatchi &amp; Saatchi&#39;s London office is the first to have an in-house Digital branch. We create websites, digital campaigns, email newsletters, flash content and more for a wide range of clients. In the web development team, we're in the unique position of being able to set standards that will hopefully... </description>
+        </item>
     </channel>
 </rss>

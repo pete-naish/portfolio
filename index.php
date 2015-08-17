@@ -15,15 +15,16 @@
         </section>
         <section class="project-listing">
             <?php 
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--frhank.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bbs.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--central.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--dll.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bb.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--fscs.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--parkinsons.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--mdu.php");
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--cp.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--milkposter.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--frhank.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bbs.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--central.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--dll.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bb.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--fscs.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--parkinsons.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--mdu.php");
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--cp.php");
             ?>
         </section>
 

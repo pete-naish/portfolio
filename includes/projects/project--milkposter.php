@@ -1,6 +1,6 @@
 <article class="project">
-    <h3 class="project__title">Mattessons Frhank Microsite</h3>
-    <img class="project__image" src="/assets/img/content/project--saatchi__frhank.png">
+    <h3 class="project__title">Cravendale Milk Poster</h3>
+    <img class="project__image" src="/assets/img/content/project--saatchi__milkposter.png">
     <div class="project__info">
         <h4 class="info__label">Project brief</h4>
         <p class="info__text">To create a single-page, fully-responsive, mobile-first static website to showcase brand and identity guidelines</p>
@@ -47,7 +47,7 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/frhank/">View front-end templates</a>
-        <a class="button--positive" href="http://www.frhank.com/">View live website</a>
+        <a class="button--positive" href="/milkposter/">View front-end templates</a>
+        <a class="button--positive" href="http://www.cravendale.co.uk/milkposter/">View live website</a>
     </div>
 </article>
