@@ -10,14 +10,12 @@
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php");
         ?>
-        <section class="introduction--fancy"style="background-image: url(/assets/img/content/banner--macbook.jpg);">
-            <h1>Hey</h1>
+        <section class="introduction--fancy"style="background-image: url(/assets/img/content/banner--grass.jpg);">
+            <h1>Why we moved from Less to Sass</h1>
         </section>
         <section class="blog">
             <article class="blog__post">
                 <div class="wrapper">
-                    <h1>Why we moved from Less to Sass</h1>
-
                     <p>Saatchi &amp; Saatchi's London office is the first to have an in-house Digital branch. We create websites, digital campaigns, email newsletters, flash content and more for a wide range of clients. In the web development team, we're in the unique position of being able to set standards that will hopefully be adopted agency-wide, as Digital arms of Saatchi &amp; Saatchi pop up around the globe.</p>
 
                     <p>For this reason, we held a meeting to discuss our technology stack, and decide if there were any current industry standards or better alternatives we could switch to.</p>
@@ -50,70 +48,70 @@
 
                     <p>The way Less has added new features on top of plain CSS appears to be ill-thought-out. It has a habit of creating confusion with its syntax. For example, extends are written like so:</p>
 
-                    <pre>
-                        <code>
-                    .a:extend(.b) {
-                        // styles go here
-                    }
+                    <pre class="language-less">
+                        <code class="language-less">
+.a:extend(.b) {
+    // styles go here
+}
                         </code>
                     </pre>
 
                     <p>It's a strange usage of the colon, which in plain css is used to denote a pseudo state or element:</p>
 
-                    <pre>
-                        <code>
-                    a:hover {}
-                    a:before {}
+                    <pre class="language-css">
+                        <code class="language-css">
+a:hover {}
+a:before {}
                         </code>
                     </pre>
 
                     <p>Sass extends are much more explicit:</p>
 
-                    <pre>
-                        <code>
-                    .a {
-                        @extend .b;
-                        // styles go here
-                    }
+                    <pre class="language-scss">
+                        <code class="language-scss">
+.a {
+    @extend .b;
+    // styles go here
+}
                         </code>
                     </pre>
 
                     <p>Mixins are also confusing in Less, as they're defined and used with classes:</p>
 
-                    <pre>
-                        <code>
-                    // definition
-                    .border-radius(@radius: 5px) {
-                        -webkit-border-radius: @radius;
-                        -moz-border-radius: @radius;
-                        border-radius: @radius;
-                    }
+                    <pre class="language-less">
+                        <code class="language-less">
+// definition
+.border-radius(@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
 
-                    // usage
-                    .a {
-                        .border-radius(10px);
-                        color: red;
-                    }
+// usage
+.a {
+    .border-radius(10px);
+    color: red;
+}
                         </code>
                     </pre>
 
                     <p>In Sass, it's much clearer:</p>
 
-                    <pre>
-                        <code>
-                    // definition
-                    @mixin border-radius($radius) {
-                        -webkit-border-radius: $radius;
-                        -moz-border-radius: $radius;
-                        -ms-border-radius: $radius;
-                        border-radius: $radius;
-                    }
+                    <pre class="language-scss">
+                        <code class="language-scss">
+// definition
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
 
-                    // usage
-                    .a {
-                        @include border-radius(10px);
-                        color: red;
-                    }
+// usage
+.a {
+    @include border-radius(10px);
+    color: red;
+}
                         </code>
                     </pre>
 
@@ -125,51 +123,51 @@
 
                     <p>In the following example (adapted from <a href="http://codepen.io/funzeye/pen/QwNMqV">this CodePen</a>), we define two colour palettes. We then use a map function to return palette variations for use in our css. This keeps our project's colours nicely organised and readable:</p>
 
-                    <pre>
-                        <code>
-                    // set variables
-                    $white: #fff;
-                    $black: #000;
+                    <pre class="language-scss">
+                        <code class="language-scss">
+// set variables
+$white: #fff;
+$black: #000;
 
-                    $palettes: (
-                        maroon: (
-                            base: #8b2c41, 
-                            light: #d17f91,
-                            dark: #41000e,
-                            contrast: $white
-                        ),
-                        green: (
-                            base: #488329,
-                            light: #93c478,
-                            dark: #073e10,
-                            contrast: $black
-                        )
-                    );
+$palettes: (
+    maroon: (
+        base: #8b2c41, 
+        light: #d17f91,
+        dark: #41000e,
+        contrast: $white
+    ),
+    green: (
+        base: #488329,
+        light: #93c478,
+        dark: #073e10,
+        contrast: $black
+    )
+);
 
-                    // palette function
-                    @function palette($palette, $tone: 'base') {
-                        @return map-get(map-get($palettes, $palette), $tone);
-                    }
-                      
-                    // usage
-                    .palette-example-1 {
-                        color: palette(maroon);
-                    }
+// palette function
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+  
+// usage
+.palette-example-1 {
+    color: palette(maroon);
+}
 
-                    .palette-example-2 {
-                        color: palette(green, light);
-                        background-color: palette(green, contrast);
-                    }
+.palette-example-2 {
+    color: palette(green, light);
+    background-color: palette(green, contrast);
+}
 
-                    // output
-                    .palette-example-1 {
-                        color: #8b2c41;
-                    }
+// output
+.palette-example-1 {
+    color: #8b2c41;
+}
 
-                    .palette-example-2 {
-                        color: #93c478;
-                        background-color: #000;
-                    }
+.palette-example-2 {
+    color: #93c478;
+    background-color: #000;
+}
                         </code>
                     </pre>
 
