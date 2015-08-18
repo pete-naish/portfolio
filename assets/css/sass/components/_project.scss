@@ -10,7 +10,11 @@
         .css3__3--bottom-left,
         .prepros__circle,
         .compass__star,
-        .less__background {
+        .less__background,
+        .grunt__eye,
+        .grunt__tusk,
+        .grunt__skin,
+        .grunt__shading {
             fill: $color--grey--primary;
         }
         .backbone__light {
@@ -27,7 +31,11 @@
         .css3__3--bottom-left,
         .prepros__circle,
         .compass__star,
-        .less__background {
+        .less__background,
+        .grunt__eye,
+        .grunt__tusk,
+        .grunt__skin,
+        .grunt__shading {
             fill: $color--grey--secondary;
         }
         .backbone__light {
@@ -228,6 +236,19 @@
         .less__character {
             fill: #fff;
         }
+        .grunt__outline {
+            fill: #463014;
+        }
+        .grunt__tusk,
+        .grunt__eye {
+            fill: #fff;
+        }
+        .grunt__skin {
+            fill: #FBA919;
+        }
+        .grunt__shading {
+            fill: #E78724;
+        }
     }
 }
 
@@ -245,6 +266,7 @@
 .compass__shape,
 .prepros__shape,
 .less__character,
-.backbone__dark {
+.backbone__dark,
+.grunt__outline {
     fill: $color--copy;
 }
