@@ -12,6 +12,9 @@
         .compass__star {
             fill: $color--grey--primary;
         }
+        .backbone__light {
+            fill: $color--copy--light;
+        }
     }
     &:nth-child(even) {
         background-color:$color--grey--secondary;   
@@ -24,6 +27,9 @@
         .prepros__circle,
         .compass__star {
             fill: $color--grey--secondary;
+        }
+        .backbone__light {
+            fill: $color--copy--light;
         }
     }
 }
@@ -204,6 +210,12 @@
         .compass__star {
             fill: #fff;
         }
+        .backbone__dark {
+            fill: #002A41;
+        }
+        .backbone__light {
+            fill: #0071B5;
+        }
     }
 }
 
@@ -219,6 +231,11 @@
 .mixture__shape,
 .git__shape,
 .compass__shape,
-.prepros__shape {
+.prepros__shape,
+.backbone__dark {
+    fill: $color--copy;
+}
+
+.backbone__dark {
     fill: $color--copy;
 }

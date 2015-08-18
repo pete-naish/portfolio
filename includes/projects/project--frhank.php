@@ -21,6 +21,11 @@
             </li>
             <li class="project__tool">
                 <?php 
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--backbone.php");
+                ?>
+            </li>
+            <li class="project__tool">
+                <?php 
                    include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--jquery.php");
                 ?>
             </li>
