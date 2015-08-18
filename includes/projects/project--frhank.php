@@ -29,19 +29,9 @@
                    include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--jquery.php");
                 ?>
             </li>
-            <li class="project__tool">
+            <li class="project__tool  project__tool--wide">
                 <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--sass.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--bem.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--mixture.php");
+                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--less.php");
                 ?>
             </li>
             <li class="project__tool">

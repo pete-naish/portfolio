@@ -41,11 +41,6 @@
             </li>
             <li class="project__tool">
                 <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--mixture.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
                    include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--git.php");
                 ?>
             </li>

@@ -356,13 +356,13 @@ header {
   overflow: hidden; }
   .project:nth-child(odd) {
     background-color: #ececec; }
-    .project:nth-child(odd) .html5__5--left, .project:nth-child(odd) .html5__5--right, .project:nth-child(odd) .css3__3--top-left, .project:nth-child(odd) .css3__3--top-right, .project:nth-child(odd) .css3__3--bottom-right, .project:nth-child(odd) .css3__3--bottom-left, .project:nth-child(odd) .prepros__circle, .project:nth-child(odd) .compass__star {
+    .project:nth-child(odd) .html5__5--left, .project:nth-child(odd) .html5__5--right, .project:nth-child(odd) .css3__3--top-left, .project:nth-child(odd) .css3__3--top-right, .project:nth-child(odd) .css3__3--bottom-right, .project:nth-child(odd) .css3__3--bottom-left, .project:nth-child(odd) .prepros__circle, .project:nth-child(odd) .compass__star, .project:nth-child(odd) .less__background {
       fill: #ececec; }
     .project:nth-child(odd) .backbone__light {
       fill: #bbb; }
   .project:nth-child(even) {
     background-color: #ddd; }
-    .project:nth-child(even) .html5__5--left, .project:nth-child(even) .html5__5--right, .project:nth-child(even) .css3__3--top-left, .project:nth-child(even) .css3__3--top-right, .project:nth-child(even) .css3__3--bottom-right, .project:nth-child(even) .css3__3--bottom-left, .project:nth-child(even) .prepros__circle, .project:nth-child(even) .compass__star {
+    .project:nth-child(even) .html5__5--left, .project:nth-child(even) .html5__5--right, .project:nth-child(even) .css3__3--top-left, .project:nth-child(even) .css3__3--top-right, .project:nth-child(even) .css3__3--bottom-right, .project:nth-child(even) .css3__3--bottom-left, .project:nth-child(even) .prepros__circle, .project:nth-child(even) .compass__star, .project:nth-child(even) .less__background {
       fill: #ddd; }
     .project:nth-child(even) .backbone__light {
       fill: #bbb; }
@@ -443,6 +443,9 @@ header {
     width: 100%;
     max-height: 80px; }
 
+.project__tool--wide {
+  width: 80px; }
+
 .tool__link:hover {
   border: 0; }
 .tool__link:hover svg path, .tool__link:hover svg rect, .tool__link:hover svg circle, .tool__link:active svg path, .tool__link:active svg rect, .tool__link:active svg circle, .tool__link:focus svg path, .tool__link:focus svg rect, .tool__link:focus svg circle {
@@ -512,11 +515,12 @@ header {
   fill: #002A41; }
 .tool__link:hover svg .backbone__light, .tool__link:active svg .backbone__light, .tool__link:focus svg .backbone__light {
   fill: #0071B5; }
+.tool__link:hover svg .less__background, .tool__link:active svg .less__background, .tool__link:focus svg .less__background {
+  fill: #172e4e; }
+.tool__link:hover svg .less__character, .tool__link:active svg .less__character, .tool__link:focus svg .less__character {
+  fill: #fff; }
 
-.html5__text, .html5__shield--left, .html5__shield--right, .css3__text, .css3__shield--left, .css3__shield--right, .jquery__wave, .sass__text, .bem__shape, .mixture__shape, .git__shape, .compass__shape, .prepros__shape, .backbone__dark {
-  fill: #333; }
-
-.backbone__dark {
+.html5__text, .html5__shield--left, .html5__shield--right, .css3__text, .css3__shield--left, .css3__shield--right, .jquery__wave, .sass__text, .bem__shape, .mixture__shape, .git__shape, .compass__shape, .prepros__shape, .less__character, .backbone__dark {
   fill: #333; }
 
 .blog__post {
