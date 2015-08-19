@@ -14,18 +14,12 @@
             <h1>I love creative problem solving, building <br>ambitious websites, wearing business <br>slippers, and drum &amp; bass</h1>
         </section>
         <section class="project-listing">
-            <?php 
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--milkposter.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--frhank.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--directline.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bbs.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--central.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--dll.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--bb.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--fscs.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--parkinsons.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--mdu.php");
-                include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--cp.php");
+            <?php
+                $projects = array('milkposter', 'frhank', 'directline', 'bbs', 'central', 'dll', 'bb', 'fscs', 'parkinsons', 'mdu', 'cp');
+
+                foreach ($projects as $project) {
+                    include($_SERVER['DOCUMENT_ROOT'] . "/includes/projects/project--" . $project . ".php");
+                }
             ?>
         </section>
 

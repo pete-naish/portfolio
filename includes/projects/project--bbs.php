@@ -9,41 +9,15 @@
         <h4 class="info__label">Browser support</h4>
         <p class="info__text">Latest browsers spanning mobile, tablet, and desktop, including Internet Explorer 9+</p>
         <ul class="project__tools">
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--html5.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--css3.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--jquery.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--sass.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--bem.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--mixture.php");
-                ?>
-            </li>
-            <li class="project__tool">
-                <?php 
-                   include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--git.php");
-                ?>
-            </li>
+            <?php
+                $icons = array('html5', 'css3', 'jquery', 'sass', 'bem', 'mixture', 'git');
+
+                foreach ($icons as $icon) {
+                    echo '<li class="project__tool">';
+                    include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--". $icon .".php");
+                    echo '</li>';
+                }
+            ?>
         </ul>
     </div>
     <div class="project__actions">

@@ -16,7 +16,7 @@
         <section class="blog">
             <article class="blog__post">
                 <div class="wrapper">
-                    <p>Saatchi &amp; Saatchi's London office is the first to have an in-house Digital branch. We create websites, digital campaigns, email newsletters, flash content and more for a wide range of clients. In the web development team, we're in the unique position of being able to set standards that will hopefully be adopted agency-wide, as Digital arms of Saatchi &amp; Saatchi pop up around the globe.</p>
+                    <p>Saatchi &amp; Saatchi's London office is the first to have an in-house Digital branch. We create websites, digital campaigns, email newsletters, flash content and more for a wide range of clients. In the web development team, we're in the unique position of being able to set standards that will hopefully be adopted agency-wide, as Digital arms of Saatchi pop up around the globe.</p>
 
                     <p>For this reason, we held a meeting to discuss our technology stack, and decide if there were any current industry standards or better alternatives we could switch to.</p>
 
@@ -44,7 +44,7 @@
 
                     <p>In this article, I'll write about our switch from Less to Sass.</p>
 
-                    <p>We initially used Less because it complemented the rest of our stack, and could be implemented without any additional dependencies; it could be installed and compiled using NPM and grunt. To me, Less always felt like a less-capable alternative to Sass. I had used it when I first discovered CSS pre-processors, as at the time there was a JavaScript compiler that allowed me to try it out without much effort. It was pretty buggy, so I decided to take a look at Sass instead. Sass immediately felt more powerful, and I never looked back.</p>
+                    <p>We initially used Less because it complemented the rest of our stack, and could be implemented without any additional dependencies; it could be installed and compiled using NPM and grunt. Personally, Less always felt like a less-capable alternative to Sass. I had used it when I first discovered CSS pre-processors, as at the time there was a JavaScript compiler that allowed me to try it out without much effort. Although at this time Sass was more feature rich, there was a larger overhead to get started. Less's JS compiler was pretty buggy, especially on mobile, so I decided it might be worth investing the time to get started with Sass. It immediately felt more powerful, and I never looked back.</p>
 
                     <p>The way Less has added new features on top of plain CSS appears to be ill-thought-out. It has a habit of creating confusion with its syntax. For example, extends are written like so:</p>
 
@@ -117,11 +117,23 @@ a:before {}
 
                     <p>Scanning and reading through Sass files is much easier because its syntax is intuitive and explicit.</p>
 
-                    <p>In Less, variables are denoted with <code>@</code>, whereas Sass uses <code>$</code>. <code>$</code> isn't used anywhere else in plain CSS (except for the rarely-used [attribute$=value] selector), so it's safe to use in this new way. <code>@</code>, on the other hand, is used in plain CSS for directives like <code>@import</code> and <code>@media</code>. Sass uses <code>@</code> to add its own directives, such as @extend and @mixin, which makes absolute sense.</p>
+                    <p>In Less, variables are denoted with <code class="language-markup">@</code>, whereas Sass uses <code class="language-markup">$</code>. <code class="language-markup">$</code> isn't used anywhere else in plain CSS (except for the rarely-used <code class="language-markup">[attribute$=value]</code> selector), so it's safe to use in this new way. <code class="language-markup">@</code>, on the other hand, is used in plain CSS for directives like <code class="language-markup">@import</code> and <code class="language-markup">@media</code>. Sass uses <code class="language-markup">@</code> to add its own directives, such as <code class="language-markup">@extend</code>, <code class="language-markup">@mixin</code>, and <code class="language-markup">@function</code>, which makes absolute sense.</p>
 
                     <p>Overall, Sass has a much clearer syntax that doesn't interfere with or redefine plain CSS, but it's not just the syntax that made us switch; Sass has a more intelligent way handling of lists, loops, and maps, and accepts string interpolation for both properties and values. This leads to more powerful but less verbose functions and mixins that are far easier to understand.</p>
 
-                    <p>In the following example (adapted from <a href="http://codepen.io/funzeye/pen/QwNMqV">this CodePen</a>), we define two colour palettes. We then use a map function to return palette variations for use in our css. This keeps our project's colours nicely organised and readable:</p>
+                    <p>A useful example of string interpolation in Sass is the following, which, at the time of writing, Less was unable to replicate:</p>
+
+                    <pre class="language-scss">
+                        <code class="language-scss">
+$images: "../images/optimized";
+
+body {
+    background-image: url(#{$images}/example.png);
+}
+                        </code>
+                    </pre>
+
+                    <p>In this more complex example, adapted from <a href="http://codepen.io/funzeye/pen/QwNMqV">this CodePen</a>, we define two colour palettes. We then use a map function to return palette variations for use in our css. This keeps our project's colours nicely organised and readable:</p>
 
                     <pre class="language-scss">
                         <code class="language-scss">
@@ -171,7 +183,7 @@ $palettes: (
                         </code>
                     </pre>
 
-                    <p>Snippets like this make the Sass community feel bigger and more forward-thinking than Less. Its features and syntax just make sense.</p>
+                    <p>The Sass community is full of useful and forward-thinking snippets like this, which helps it feel bigger and more progressive than Less. Its features and syntax just make sense.</p>
 
                     <p>We won't be converting old projects over to Sass, we just have a cut-off point where all new projects will use it. We've developed a set of Sass guidelines to help with this transition, which also introduces a mobile-first, component-based front-end architecture and style guide. This will be covered in a future blog post.</p>
                     <div class="article-meta">
