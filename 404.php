@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Pete Naish | 404 Page Not Found</title>
-        <?php
-            include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
-        ?>
-    </head>
+<?php
+    $page_title = "404 Page Not Found";
+    include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
+?>
     <body>
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php");

@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Pete Naish | Tag: Sass</title>
-        <?php
-            include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
-        ?>
-    </head>
+<?php
+    $page_title = "Tag: Sass";
+    include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
+?>
     <body>
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php");

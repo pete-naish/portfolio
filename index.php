@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Pete Naish | Front-end Web Developer</title>
-        <?php
-            include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
-        ?>
-    </head>
+<?php
+    $page_title = "Front-end Web Developer";
+    include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
+?>
     <body>
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php");

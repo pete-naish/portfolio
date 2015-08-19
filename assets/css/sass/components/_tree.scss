@@ -1,0 +1,57 @@
+.tree {
+    background: #fff;
+    padding: 1em;
+    margin: 0;
+    margin-bottom: $base--line-height / 1;
+    overflow: auto;
+    clear: both;
+    &.hide-all {
+        .folder__checkbox + .tree__container {
+            display: none !important;
+        }
+    }
+    &.show-all {
+        .folder__checkbox + .tree__container {
+            display: block !important;
+        }
+    }
+    // in here to override blog style
+    &.tree {
+        list-style: none;
+    }
+    .tree__container {
+        padding-left: 22px;
+        list-style: none;
+    }
+    &.tree li,
+    ol li {
+        margin-left: 0;
+    }
+}
+
+.tree.show-all {
+    .folder__checkbox + .tree__container {
+        display: block;
+    }
+}
+
+.folder__label {
+    font-weight: 700;
+}
+
+.folder__checkbox {
+    display: none;
+    + .tree__container {
+        display: none;
+    }
+}
+
+.folder__checkbox:checked + ol {
+    display: block;
+}
+
+.hint {
+    font-size: em(14px);
+    font-weight: normal;
+    color: #c2c2c2;
+}

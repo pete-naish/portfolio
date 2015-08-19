@@ -1,11 +1,8 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Pete Naish | Tag: About</title>
-        <?php
-            include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
-        ?>
-    </head>
+<?php
+    $page_title = "Tag: About";
+    include($_SERVER['DOCUMENT_ROOT'] . "/includes/head.php");
+?>
     <body>
         <?php
             include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php");
