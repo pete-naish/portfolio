@@ -1,20 +1,14 @@
 <nav class="nav-primary">
     <ul class="nav-primary__items">
-        <li class="nav-primary__item">
-            <?php 
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--github.php");
-            ?>
-        </li>
-        <li class="nav-primary__item">
-            <?php 
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--linkedin.php");
-            ?>
-        </li>
-        <li class="nav-primary__item">
-            <?php 
-               include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--twitter.php");
-            ?>
-        </li>
+        <?php
+            $icons = array('github', 'linkedin', 'twitter');
+
+            foreach ($icons as $icon) {
+                echo '<li class="nav-primary__item">';
+                include($_SERVER['DOCUMENT_ROOT'] . "/includes/icons/icon--". $icon .".php");
+                echo '</li>';
+            }
+        ?>
         <li class="nav-primary__item">
             <a class="nav-primary__link--text" href="/blog" title="Visit Pete's Blog">Blog</a>
         </li>
