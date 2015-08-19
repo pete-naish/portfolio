@@ -580,6 +580,10 @@ header {
     float: right;
     margin-left: 20px;
     max-width: 50%; }
+  .blog__post ol ol {
+    list-style-type: lower-alpha; }
+  .blog__post ul ul, .blog__post ol ol, .blog__post ul ol, .blog__post ol ul {
+    margin-bottom: 0; }
 
 .code-wrapper {
   background-color: #fff;
@@ -587,6 +591,10 @@ header {
   margin-right: -2000px;
   padding-left: 2000px;
   padding-right: 2000px; }
+
+.important {
+  border: 2px dashed #c2c2c2;
+  padding: 10px; }
 
 .pagination {
   text-align: center;
@@ -698,3 +706,41 @@ pre[class*='language-'] {
       right: 0;
       border-radius: 0 0 0 5px;
       padding: 0 .5em; }
+
+.tree {
+  background: #fff;
+  padding: 1em;
+  margin: 0;
+  margin-bottom: 24px;
+  overflow: auto;
+  clear: both; }
+  .tree.hide-all .folder__checkbox + .tree__container {
+    display: none !important; }
+  .tree.show-all .folder__checkbox + .tree__container {
+    display: block !important; }
+  .tree.tree {
+    list-style: none; }
+  .tree .tree__container {
+    padding-left: 22px;
+    list-style: none; }
+  .tree.tree li, .tree ol li {
+    margin-left: 0; }
+
+.tree.show-all .folder__checkbox + .tree__container {
+  display: block; }
+
+.folder__label {
+  font-weight: 700; }
+
+.folder__checkbox {
+  display: none; }
+  .folder__checkbox + .tree__container {
+    display: none; }
+
+.folder__checkbox:checked + ol {
+  display: block; }
+
+.hint {
+  font-size: 0.875em;
+  font-weight: normal;
+  color: #c2c2c2; }

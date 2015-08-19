@@ -74,6 +74,15 @@
         margin-left: 20px;
         max-width: 50%;
     }
+    ol ol {
+        list-style-type: lower-alpha;
+    }
+    ul ul,
+    ol ol,
+    ul ol,
+    ol ul {
+        margin-bottom: 0;
+    }
 }
 
 .code-wrapper {
@@ -82,4 +91,9 @@
     margin-right: -2000px;
     padding-left: 2000px;
     padding-right: 2000px;
+}
+
+.important {
+    border: 2px dashed #c2c2c2;
+    padding: 10px;
 }
