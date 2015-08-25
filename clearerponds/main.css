@@ -1,0 +1,94 @@
+body, p, table, ul, li, div, h2, h3, h1 {
+	margin : 0;
+	padding : 0;
+}
+
+@font-face {
+	font-family: Chaparral;
+	src: url('ChaparralPro-Regular.otf');
+}
+
+html {
+	background : #e0fDff;
+}
+
+body {
+	font-family: Chaparral, Georgia, Times, serif; 
+}
+
+#header img {
+	float: left;
+	padding: 8px 0 0 9px;
+}
+
+h2 {
+	padding: 12px 10px 0 0;
+	float: right;
+	text-shadow: #000 1px 1px 1px;
+}
+
+li {
+	padding: 5px 0 0 75px;
+	background: url(bullet.png) left center no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: #ea7b3e;
+}
+
+a:hover {
+	text-decoration: none;
+	border-bottom: 2px solid #ea7b3e;
+}
+
+#header {
+	height: 50px;
+	background-color: #9CC0C5;
+	color: white;
+	width : 100%;
+}
+
+.content {
+	margin : 0 auto;
+	position : relative;
+	width: 960px;
+}
+
+#intro {
+	margin: 30px 0 30px 10px;
+	background-color: #effdfe;
+	border-bottom: solid 2px #cfe8ec;
+	border-right: solid 2px #cfe8ec;
+	padding: 10px 10px 10px 30px;
+	width: 900px;
+    font-size: 80px;
+	color: #729ea1;
+}
+
+.service {
+	list-style-type: none;
+}
+
+#services {
+	margin:0 0 30px 10px;
+	background-color: #effdfe;
+	border-bottom: solid 2px #cfe8ec;
+	border-right: solid 2px #cfe8ec;
+	padding: 20px;
+	width: 900px;
+	color: #729ea1;
+	font-size : 60px;
+}
+
+#footer p {
+	position: absolute;
+	font-family: sans-serif;
+	top: 285px;
+	left: 220px;
+}
+
+#footer img {
+	position: absolute;
+	top : -220px;
+}

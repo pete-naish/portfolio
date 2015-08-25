@@ -10,6 +10,6 @@
         <p class="info__text">Desktop browsers including Internet Explorer 7+</p>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="http://clearerponds.co.uk">View live website</a>
+        <a class="button--positive" href="/clearerponds/">View website</a>
     </div>
 </article>
