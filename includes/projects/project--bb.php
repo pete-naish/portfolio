@@ -22,5 +22,6 @@
     </div>
     <div class="project__actions">
         <a class="button--positive" href="http://beautyboxknebworth.co.uk">View live website</a>
+        <a class="button--positive" href="https://github.com/pete-naish/bb">View source</a>
     </div>
 </article>
