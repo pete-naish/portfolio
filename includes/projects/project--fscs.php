@@ -21,6 +21,6 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/fscs/">View website</a>
+        <a class="button--positive" href="/fscs/" rel="nofollow">View website</a>
     </div>
 </article>

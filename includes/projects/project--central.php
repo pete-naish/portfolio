@@ -21,7 +21,7 @@
         </ul>
     </div>
     <div class="project__actions">
-        <a class="button--positive" href="/central/">View front-end templates</a>
+        <a class="button--positive" href="/central/" rel="nofollow">View front-end templates</a>
         <a class="button--positive" href="http://www.cssd.ac.uk/">View live website</a>
     </div>
 </article>

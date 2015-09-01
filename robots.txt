@@ -5,3 +5,4 @@ Disallow: /mdu/
 Disallow: /parkinsons/
 Disallow: /fscs/
 Disallow: /bbs/
+Disallow: /clearerponds/
