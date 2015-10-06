@@ -9,6 +9,9 @@
         <section class="introduction">
             <h1>I love creative problem solving, building <br>ambitious websites, wearing business <br>slippers, and drum &amp; bass</h1>
         </section>
+        <section class="availability">
+            <p><a href="mailto:pete@nai.sh">I'm available for new contracts starting 19th October</a></p>
+        </section>
         <section class="project-listing">
             <?php
                 $projects = array('milkposter', 'frhank', 'directline', 'bbs', 'central', 'dll', 'bb', 'fscs', 'parkinsons', 'mdu', 'cp');

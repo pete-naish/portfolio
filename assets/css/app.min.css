@@ -707,6 +707,13 @@ pre[class*='language-'] {
       border-radius: 0 0 0 5px;
       padding: 0 .5em; }
 
+.availability {
+  background-color: #D1E751;
+  text-align: center;
+  padding: 40px 30px; }
+  .availability a {
+    color: inherit; }
+
 .tree {
   background: #fff;
   padding: 1em;
