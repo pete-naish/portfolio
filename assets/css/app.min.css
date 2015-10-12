@@ -708,6 +708,7 @@ pre[class*='language-'] {
       padding: 0 .5em; }
 
 .availability {
+  display: none;
   background-color: #D1E751;
   text-align: center;
   padding: 40px 30px; }
